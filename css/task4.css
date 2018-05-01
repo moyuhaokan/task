@@ -1,3 +1,4 @@
+
 body {
     background-color: #eff0f4;
 }
@@ -57,6 +58,7 @@ body {
     color: #fff;
     text-align: center;
     line-height: 3em;
+    border: none;
     background-color: #5fc0cd;
     outline-color: #5fc0cd;;
 }
