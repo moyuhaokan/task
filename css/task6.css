@@ -9,7 +9,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 6vh;
+    height: 8vh;
     background-color: #5fc0cd;
 }
 header img {
@@ -42,7 +42,7 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 6vh;
+    margin-top: 8vh;
     border-bottom: 1px solid #afbac0;
 }
 
