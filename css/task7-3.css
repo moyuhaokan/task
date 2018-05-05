@@ -38,7 +38,7 @@ header img {
 .good {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 10%;
     font-size: 1.8rem;
     color: #ffc865;
 }
@@ -57,13 +57,15 @@ header img {
 }
 
 .frist {
+    display: inline-block;
     margin-top: 1rem;
     font-size: 2rem;
 }
 .minutes {
     float: right;
     margin-right: 2rem;
-    font-size: .8rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
     color: #c7c7c7;
 }
 
