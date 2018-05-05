@@ -6,12 +6,17 @@ body {
     background-color: #efefef;
 }
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     height: 12vh;
     background-color: #29bde0;
+
 }
 header img {
     margin-left: 2rem;
     margin-top: 3rem;
+    max-width: 7vw;
 }
 .main-top {
     margin: 2rem;
@@ -20,6 +25,12 @@ header img {
     line-height: 4rem;
     color: #9a9a9a;
     background-color: #fff;
+}
+.mar-top {
+    margin-top: 15vh;
+}
+.main-top a:visited {
+    color: #9a9a9a;
 }
 .main-top img {
     float: right;
