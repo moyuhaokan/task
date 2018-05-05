@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+.head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 header {
     display: flex;
     align-items: center;
@@ -32,7 +37,6 @@ header img {
 }
 .select-bg{
     width:200px;
-    height: 30px;
     line-height: 37px;
     cursor: pointer;
     position: relative;
@@ -43,6 +47,7 @@ header img {
     justify-content: space-between;
     align-items: center;
     margin-top: 8vh;
+    background-color: #fff;
     border-bottom: 1px solid #afbac0;
 }
 
@@ -57,7 +62,6 @@ header img {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #afbac0;
-    font-size: 0px;`
     line-height:0px
 }
 
@@ -69,16 +73,9 @@ header img {
     outline: none;
     border: 0 none;
     position: relative;
-    padding: 0 0 0 5px;
-    width: 100%;
     padding-left: 30%;
     color: #afbac0;
-    font-weight: bold;
     background: none;
-    background-color: transparent;
-    font-size: 13px;
-    z-index: 99;
-    overflow: hidden;
 }
 .line {
     border-right: 1px solid #afbac0;
@@ -86,8 +83,10 @@ header img {
 }
 .main {
     border-bottom: 1px solid #afbac0;
-    padding-bottom: 2rem;
     font-size: 1rem;
+}
+.main1 {
+    margin-top: 16vh;
 }
 .main-top {
     margin-left: 1rem;
@@ -98,10 +97,14 @@ header img {
 .main-top img {
     margin-right: 1rem;
 }
+.main-mar-bot {
+    margin-bottom: 1rem;
+}
 .main-middie {
     margin-left: 4rem;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 .day {
     display: inline-block;
@@ -128,20 +131,18 @@ header img {
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 1vh 20%;
     font-size: 2vh;
     color: #999;
     background-color: #f8fafb;
 }
 .main-bottom {
-    margin-bottom: 17vh;
+    margin-bottom: 11vh;
 }
 .bottom img {
     width: 4vh;
 }
 .bottom-middl img {
     width: 10vh;
+    max-width: 7vh;
 }
