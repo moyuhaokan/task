@@ -87,8 +87,13 @@ header {
 	line-height: 2rem;
 	margin: 20px 0;
 }
-..bout span {
-	
+.bout span {
+	padding-bottom: 3px;
+	border-bottom: 1px solid  #29b078;
+}
+.bout span:hover {
+	padding-bottom: 3px;
+	border-bottom: 1px solid  #fff;
 }
 .foot {
 	color: #fff;
