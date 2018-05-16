@@ -116,23 +116,59 @@ body {
 	background-image: url(../images/task8-1-avatar4.png);
 }
 
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px) {
     .business .col-lg-3 {
 	width: 20%;
+	padding: 0;
 }
+}
+.img {
+	margin: 20px 0;
 }
 .business {
 	text-align: center;
 }
+.business .imgs {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+	height: 200px;
+	background: #fff;
+	border: 1px solid #fff;
+}
 .business img {
-	margin: 15px 0;
-	height: 175px;
+	max-height: 178px;
+	max-width: 230px;
+	
 }
-.business img:hover {
-	z-index: 100px;
-	box-shadow:0px 0px 2px #333333;
+.business .imgs:hover {
+	border: 1px solid black;
+	
+}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .write {
 	width: 100%;
 	background: #fff;
