@@ -20,74 +20,100 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="nav-btnn">
-                  <button type="button" class="btn btn-default navbar-btn">
-                    首页
-                </button>
-                 <button type="button" class="btn btn-default navbar-btn">
-                   在线定制
-                </button>
-                 <button type="button" class="btn btn-default navbar-btn">
-                    标准箱
-                </button>
-                <button type="button" class="btn btn-default navbar-btn">
-                    品质保障
-                </button>
-        </div>
-    </div>
-    </div>
-    <nav>
+    <div class="width-back">
+    <nav class="container navbar-default navbar background " role="navigation">
 
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="navbar navbar-nav navbar-right">
+                            <li><button type="button" class="btn btn-default">首 页</button></li>
+                            <li><button type="button" class="btn btn-default">在线定制</button></li>
+                            <li><button type="button" class="btn btn-default">标准箱</button></li>
+                            <li><button type="button" class="btn btn-default">品质保障</button></li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
     <div class="main">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-lg-1 ">
+            <div class="row step-mar">
+                <div class="col-lg-4">&nbsp</div>
+                <div class="col-xs-3 col-lg-2 step-pad">
                     <div>
-                        
+                        <div class="line"></div>
+                        <div class="num-box"><div class="number">1</div></div>
+                        <div class="step">1.定制纸箱 </div>
                     </div>
                 </div>
+                <div class="col-xs-3 col-lg-2 step-pad">
+                    <div>
+                        <div class="line"></div>
+                        <div class="num-box"><div class="number">2</div></div>
+                        <div class="step">2.选择数量   </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-lg-2 step-pad">
+                    <div>
+                        <div class="line"></div>
+                        <div class="num-box"><div class="number">3</div></div>
+                        <div class="step">3.上传附件   </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-lg-2 step-pad">
+                    <div>
+                        <div class="line"></div>
+                        <div class="num-box"><div class="number">4</div></div>
+                        <div class="step">4.确认下单   </div>
+                    </div>
+            </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
         <div class="container">
             <div class="follow">请您按照以下步骤来定制您的纸箱</div>
         </div>
         <div class="container">
             <div class="select"><img src="../images/task10-box.png"><span>选择箱型</span></div>
         </div>
-
-
-
-
-
-
         <div class="container ">
-            <div class="radio">           
-                <div class="radio-inbox">  
+            <form>
+            <div class="row radio">           
+                <div class="radio-inbox col-xs-12 col-lg-2">  
                     <label class="radio-inline">
                         <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 对口箱 
                     </label>
                 </div>
-                <div class="radio-inbox">  
+                <div class="radio-inbox col-xs-12 col-lg-2">  
                     <label class="radio-inline">
                         <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>飞机盒  
                     </label>
                 </div>
-                <div class="radio-inbox">  
+                <div class="radio-inbox col-xs-12 col-lg-2">  
                     <label class="radio-inline">
                         <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>天地盖  
                     </label>
                 </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="check col-xs-12 col-lg-2">
+                    <select>
+                        <option>查看详情</option>
+                        <option>江吉仪</option>
+                        <option>大家说</option>
+                        <option>他很帅</option>
+                    </select>
+                    <img src="../images/task10-si.png">
+                </div>
             </div>
+            </form>
         </div>
 
 
@@ -100,24 +126,39 @@
 
        
         <div class="container ">
-            <div class="radio1">           
-                <div class="radio-inbox1">  
-                    <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>外径 
+            <form>
+            <div class="row radio">           
+                <div class="radio-inbox col-xs-12 col-lg-9">
+                    <label class="radio-inline col-lg-2">
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 外径
                     </label>
-                    <span>长<input type="text" />mm</span>
-                    <span>宽<input type="text" >mm</span>
-                    <span>高<input type="text" />mm</span>
+                    <div class="row">
+                        <span class="nput col-lg-3 col-xs-12">长<input type="text" maxlength="5" onkeyup="this.value=this.value.replace(/\D/g,'')" />mm</span>
+                        <span class="nput col-lg-3 col-xs-12">宽<input type="text" maxlength="5" onkeyup="this.value=this.value.replace(/\D/g,'')"  />mm</span>
+                        <span  class="nput col-lg-3 col-xs-12">高<input type="text" maxlength="5" onkeyup="this.value=this.value.replace(/\D/g,'')"  />mm</span>
+                    </div>
+                </div> 
+               <div class="radio-inbox col-xs-12 col-lg-9">
+                    <label class="radio-inline col-lg-2">
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>内径
+                    </label>
+                    <div class="row">
+                        <span class="nput col-lg-3 col-xs-12">长<input type="text" maxlength="5" onkeyup="this.value=this.value.replace(/\D/g,'')" />mm</span>
+                        <span class="nput col-lg-3 col-xs-12">宽<input type="text" maxlength="5" onkeyup="this.value=this.value.replace(/\D/g,'')"  />mm</span>
+                        <span  class="nput col-lg-3 col-xs-12">高<input type="text" maxlength="5" onkeyup="this.value=this.value.replace(/\D/g,'')"  />mm</span>
+                    </div>
                 </div>
-                <div class="radio-inbox1">  
-                    <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 内径 
-                    </label>
-                    <span>长<input type="text" />mm</span>
-                    <span>宽<input type="text" >mm</span>
-                    <span>高<input type="text" />mm</span>
+                 <div class="check col-xs-12 col-lg-2">
+                    <select>
+                        <option>查看详情</option>
+                        <option>江吉仪</option>
+                        <option>大家说</option>
+                        <option>他很帅</option>
+                    </select>
+                    <img src="../images/task10-si.png">
                 </div>
             </div>
+            </form>
         </div>
 
 
@@ -130,37 +171,43 @@
             </div>
         </div>
          <div class="container ">
-            <div class="radio3">           
-                <div class="radio-inbox3">  
+            <form>
+            <div class="row radio">           
+                <div class="radio-inbox col-xs-12 col-lg-2">  
                     <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 三层A瓦优质                    </label>
+                </div>
+                <div class="radio-inbox col-xs-12 col-lg-2">  
+                    <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质 
                     </label>
                 </div>
-                <div class="radio-inbox3">  
+                <div class="radio-inbox col-xs-12 col-lg-2">
                     <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质 
                     </label>
                 </div>
-                <div class="radio-inbox3">  
+                <div class="radio-inbox col-xs-12 col-lg-2">  
                     <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质  
-                    </label>
-                </div>          
-                <div class="radio-inbox3">  
-                    <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质
-                    </label>
-                </div>     
-                <div class="radio-inbox3">  
-                    <label class="radio-inline">
-                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质
+                        <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked>三层A瓦优质 
                     </label>
                 </div>
-            </div>
+                <div class="radio-inbox col-xs-12 col-lg-1">  
+                </div>
+                 <div class="check col-xs-12 col-lg-2">
+                    <select>
+                        <option>查看详情</option>
+                        <option>江吉仪</option>
+                        <option>大家说</option>
+                        <option>他很帅</option>
+                    </select>
+                    <img src="../images/task10-si.png">
+                </div>
+            </form>
+        </div>
         </div>
 
-
-        <div class="container">
+        <div class="container net">
             <div class="next">
             <button type="button" class="btn btn-danger">下一步</button>
             </div>
