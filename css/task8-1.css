@@ -33,7 +33,9 @@ body {
 }
 @media (max-width: 990px) {
     .student {
+    	text-align: center;
         border: none;
+        padding-left: 0px;
     }
 
 }

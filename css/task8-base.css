@@ -58,6 +58,7 @@ header {
 #navbar-menu li {
 	font-size: 2rem;
 	color: #fff;
+	text-align: center;
 	list-style-type:none;
 }
 #navbar-menu a:link {
