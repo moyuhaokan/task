@@ -115,6 +115,13 @@ body {
     line-height: $font*6;
     color: #333333;
     margin-left: 48px;
+    .day {
+      display: inline-block;
+      width: 40%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
   .main-right {
     float: right;
@@ -127,6 +134,9 @@ body {
     color: #e63b0e;
   }
 }
+.main-bottom {
+  margin-bottom: ($font*8);
+}
 .bottom {
   position: fixed;
   bottom: 0;
@@ -135,7 +145,6 @@ body {
   max-width: 780px;
   min-width: 320px;
   display: $flex;
-  margin: $font*3 0 0;
   justify-content: space-around;
   align-items: center;
   color: $color3;

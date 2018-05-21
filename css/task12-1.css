@@ -97,6 +97,12 @@ body {
     line-height: 60px;
     color: #333333;
     margin-left: 48px; }
+    .main .main-middie .day {
+      display: inline-block;
+      width: 40%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
   .main .main-right {
     float: right;
     width: 15px;
@@ -106,6 +112,9 @@ body {
     font-weight: bold;
     color: #e63b0e; }
 
+.main-bottom {
+  margin-bottom: 80px; }
+
 .bottom {
   position: fixed;
   bottom: 0;
@@ -114,7 +123,6 @@ body {
   max-width: 780px;
   min-width: 320px;
   display: flex;
-  margin: 30px 0 0;
   justify-content: space-around;
   align-items: center;
   color: #999999;
