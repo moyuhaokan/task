@@ -42,6 +42,7 @@ header {
   height: $font*16;
   display: $flex;
   align-items: center;
+  margin-top: $font*4;
   color: $color2;
   background-image: url("../images/task12-background.png");
   background-repeat: no-repeat;
@@ -143,24 +144,15 @@ header {
     text-decoration: none;
   }
 }
-a:link {
+.btn1 a{
+  color: $color;
+}
+.btn2 {
+  background: $color;
+}
+.btn2 a {
   color: #ffffff;
 }
-
-.btn1:hover {
-  color: $color2;
-  background: $color;
-}
-.btn2:hover {
-  color: $color2;
-  background: $color;
-}
-
-
-
-
-
-
 
 
 

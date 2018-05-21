@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .max-wid {
   max-width: 780px;
   min-width: 320px;
@@ -32,18 +31,22 @@ body {
       margin-right: $font;
     }
     .head-btn {
+      background: #55a8b3;
+      border-radius: ($font/2);
+
       .btn {
         width: $font*8;
         height: $font*3;
         font-size: $font*1.5;
-        border: 1px solid $color;
         border-radius: ($font/2);
         color: $color;
+        border: none;
         background: #ffffff;
-        &:hover {
-          background: #55a8b3;
-          color: #ffffff;
-        }
+      }
+      .btn1 {
+        margin-right: -10px;
+        color: #ffffff;
+        background: #55a8b3;
       }
     }
   }
@@ -124,22 +127,6 @@ body {
     color: #e63b0e;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bottom {
   position: fixed;
   bottom: 0;

@@ -24,17 +24,21 @@ body {
     .head header img {
       width: 20px;
       margin-right: 10px; }
-    .head header .head-btn .btn {
-      width: 80px;
-      height: 30px;
-      font-size: 15px;
-      border: 1px solid #5fc0cd;
-      border-radius: 5px;
-      color: #5fc0cd;
-      background: #ffffff; }
-      .head header .head-btn .btn:hover {
-        background: #55a8b3;
-        color: #ffffff; }
+    .head header .head-btn {
+      background: #55a8b3;
+      border-radius: 5px; }
+      .head header .head-btn .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+        border-radius: 5px;
+        color: #5fc0cd;
+        border: none;
+        background: #ffffff; }
+      .head header .head-btn .btn1 {
+        margin-right: -10px;
+        color: #ffffff;
+        background: #55a8b3; }
 
 .pull-down {
   display: flex;
