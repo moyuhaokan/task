@@ -65,10 +65,12 @@ header {
   }
   .main-float {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     margin-bottom: $font*2;
     .box {
       margin: 5px;
+      width: 13vh ;
       text-align: center;
       border: 3px solid #fff;
       .people {
@@ -86,24 +88,24 @@ header {
       width: 100%;
       span {
         float: left;
-        width: 4vw;
-        height: 4vw;
-        margin: .2vw;
+        width: 3vh;
+        height: 3vh;
+        margin: .4vh;
         background-image: url(../images/task7-2-sprite.png);
         background-repeat: no-repeat;
-        background-size: 16vw 4vw;
+        background-size: 12vh 3vh;
       }
       .icon1 {
         background-position: 0 0;
       }
       .icon2 {
-        background-position: -4vw 0px;
+        background-position: -3vh 0px;
       }
       .icon3 {
-        background-position: -8vw 0px;
+        background-position: -6vh 0px;
       }
       .icon4 {
-        background-position: -12vw 0px;
+        background-position: -9vh 0px;
       }
     }
   }

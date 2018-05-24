@@ -10,11 +10,23 @@ body {
   margin: auto;
   padding: 0;
 }
+$color: #29bde0;//头部颜色
+$color2: #ffffff;//白色
+$flex: flex;
+$font: 10px;
+body {
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+  padding: 0;
+}
 
 
 .max-wid {
+  overflow: hidden;
   max-width: 780px;
   min-width: 320px;
+  width: 100%;
   margin: auto;
   position: relative;
   padding-bottom: $font*4;
@@ -23,7 +35,6 @@ body {
 }
 header {
   line-height: $font*5;
-  background: $color;
   img {
     width: $font*2;
     margin-left: $font*2;
@@ -88,18 +99,18 @@ header {
     color: #ffffff;
   }
   .main-circle {
-      margin-top: 2rem;
-      height: 4rem;
-      span {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: #f0f0f0;
-        border-radius: 4px;
-        &:hover {
-          background-color: #69d1e9;
-        }
+    margin-top: 2rem;
+    height: 4rem;
+    span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      &:hover {
+        background-color: #69d1e9;
       }
+    }
   }
 }
 #sidemenu{
@@ -107,26 +118,26 @@ header {
 }
 
 #sidemenu:checked + aside {
-  left: 0;
+  left: 0%;
 }
-
+.bacg {
+  background: $color;
+}
 #sidemenu:checked ~ #wrap {
-  padding-left: 220px;
+  padding-left: 65%;
+  margin-right: -50%;
 }
 
 aside {
-
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -100%;
+  left: -60%;
   width: 60%;
   background: #f0f0f0;
   transition: 0.2s ease-out;
 }
 #wrap {
-  margin-left: 20px;
-  padding: 10px;
   transition: 0.2s ease-out;
 }
 label {
@@ -155,5 +166,6 @@ label {
 }
 #sideul li span {
   float: right;
+  margin-top: 9px;
   margin-right: 20px;
 }

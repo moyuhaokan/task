@@ -54,6 +54,9 @@ header {
     line-height: $font+$font+$font;
   }
 }
+.date1 {
+  margin-bottom: 100px;
+}
 .date {
   padding-left: $font*6-$font;
   padding-bottom: $font+$font;
@@ -70,6 +73,7 @@ header {
   }
   .day {
     color: #a6a6a6;
+
   }
 }
 

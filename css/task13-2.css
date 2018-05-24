@@ -57,10 +57,12 @@ header {
     padding-bottom: 110px; }
   .main .main-float {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     margin-bottom: 20px; }
     .main .main-float .box {
       margin: 5px;
+      width: 13vh;
       text-align: center;
       border: 3px solid #fff; }
       .main .main-float .box .people {
@@ -74,20 +76,20 @@ header {
       width: 100%; }
       .main .main-float .tu span {
         float: left;
-        width: 4vw;
-        height: 4vw;
-        margin: .2vw;
+        width: 3vh;
+        height: 3vh;
+        margin: .4vh;
         background-image: url(../images/task7-2-sprite.png);
         background-repeat: no-repeat;
-        background-size: 16vw 4vw; }
+        background-size: 12vh 3vh; }
       .main .main-float .tu .icon1 {
         background-position: 0 0; }
       .main .main-float .tu .icon2 {
-        background-position: -4vw 0px; }
+        background-position: -3vh 0px; }
       .main .main-float .tu .icon3 {
-        background-position: -8vw 0px; }
+        background-position: -6vh 0px; }
       .main .main-float .tu .icon4 {
-        background-position: -12vw 0px; }
+        background-position: -9vh 0px; }
 
 .box:hover ~ .tu {
   opacity: 1; }

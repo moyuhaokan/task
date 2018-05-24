@@ -4,17 +4,24 @@ body {
   margin: auto;
   padding: 0; }
 
-.max-wid {
+body {
   max-width: 780px;
   min-width: 320px;
+  margin: auto;
+  padding: 0; }
+
+.max-wid {
+  overflow: hidden;
+  max-width: 780px;
+  min-width: 320px;
+  width: 100%;
   margin: auto;
   position: relative;
   padding-bottom: 40px;
   background: #f0f0f0; }
 
 header {
-  line-height: 50px;
-  background: #29bde0; }
+  line-height: 50px; }
   header img {
     width: 20px;
     margin-left: 20px;
@@ -82,23 +89,25 @@ header {
   display: none; }
 
 #sidemenu:checked + aside {
-  left: 0; }
+  left: 0%; }
+
+.bacg {
+  background: #29bde0; }
 
 #sidemenu:checked ~ #wrap {
-  padding-left: 220px; }
+  padding-left: 65%;
+  margin-right: -50%; }
 
 aside {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -100%;
+  left: -60%;
   width: 60%;
   background: #f0f0f0;
   transition: 0.2s ease-out; }
 
 #wrap {
-  margin-left: 20px;
-  padding: 10px;
   transition: 0.2s ease-out; }
 
 label {
@@ -127,6 +136,7 @@ label {
 
 #sideul li span {
   float: right;
+  margin-top: 9px;
   margin-right: 20px; }
 
 /*# sourceMappingURL=task13-1.css.map */
