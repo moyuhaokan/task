@@ -33,7 +33,12 @@ header {
     margin-top: 50px; }
     .main .win img {
       margin-top: 10px;
-      max-width: 80%; }
+      max-width: 80%;
+      height: 100px; }
+    .main .win span {
+      position: absolute;
+      top: 130px;
+      color: #ffffff; }
   .main .good {
     display: flex;
     justify-content: center;

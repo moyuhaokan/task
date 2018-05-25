@@ -66,10 +66,10 @@ header {
       text-align: center;
       border: 3px solid #fff; }
       .main .main-float .box .people {
-        line-height: 10vh;
+        line-height: 8vh;
         background-color: #f5c97b; }
       .main .main-float .box .nember {
-        line-height: 6vh;
+        line-height: 5vh;
         background-color: #83b09a; }
     .main .main-float .tu {
       opacity: 0;

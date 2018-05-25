@@ -39,8 +39,13 @@ header {
     img {
       margin-top: $font;
       max-width: 80%;
+      height: $font*10;
     }
-
+    span {
+      position: absolute;
+      top:130px ;
+      color: #ffffff;
+    }
   }
   .good {
     display: $flex;
