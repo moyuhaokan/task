@@ -1,0 +1,78 @@
+.banner img {
+  margin-top: -9px;
+  width: 100%; }
+
+.home {
+  font-size: 20px;
+  margin: 30px 0; }
+
+.home-color {
+  color: #29b078; }
+
+.joint-venture {
+  font-size: 1.4rem;
+  background: #fff; }
+
+.venture {
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #e6e6e6; }
+
+.venture-houver {
+  line-height: 40px; }
+
+.venture-circular {
+  margin-left: 40%;
+  margin-right: 7px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ff7527;
+  border-radius: 50%; }
+
+.right {
+  background: #fff;
+  color: #999; }
+
+@media (max-width: 996px) {
+  .right {
+    margin: 15px; } }
+.name {
+  font-size: 15px;
+  color: #29b078; }
+
+.houver:hover .circular {
+  background: #ff7527; }
+
+.houver:hover .name {
+  color: #ff7527; }
+
+.tudou {
+  border-bottom: 2px solid #e6e6e6; }
+
+@media (min-width: 1200px) {
+  .tudou {
+    height: 120px; } }
+.tudou img {
+  max-width: 130px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+.tudou div {
+  padding-top: 20px; }
+
+@media (max-width: 443px) {
+  .tudou img {
+    display: block;
+    float: none; } }
+.brief {
+  text-indent: 2rem;
+  margin: 2rem 0; }
+
+.buttom-but {
+  margin-bottom: 200px; }
+
+/*# sourceMappingURL=task14-3.css.map */

@@ -1,0 +1,128 @@
+.contact {
+  line-height: 40px;
+  color: #26a26f;
+  background: #ffffff; }
+  .contact span {
+    display: inline-block;
+    width: 50%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .contact .contact_social {
+    float: right;
+    margin-top: 5px; }
+    .contact .contact_social img {
+      width: 30px; }
+
+.navbar {
+  height: 50px;
+  display: block; }
+
+.navbar .nav-list {
+  z-index: 0;
+  display: block; }
+
+.navbar .nav-list li {
+  list-style: none;
+  float: left;
+  margin-left: 30px; }
+
+.navbar .nav-list a {
+  color: white;
+  line-height: 50px;
+  text-decoration-line: none; }
+
+.navbar .nav-list a:hover {
+  color: #1ABC9C; }
+
+.navbar input:checked ~ .nav-list {
+  display: block;
+  background-color: #26a26f;
+  z-index: 0;
+}
+
+.navbar input:checked ~ .nav-list li {
+  clear: both;
+  background-color: #26a26f;
+  margin-left: 50%;}
+
+.navbar label {
+  display: none; }
+
+.navbar .nav-toggle {
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .navbar .nav-toggle {
+    display: none; }
+
+  .navbar label {
+    display: block;
+    z-index: 4;
+    margin-left: 80%;}
+
+  .navbar .nav-list {
+    display: none;
+    margin-left: 0px; }
+
+  .navbar .nav-list li {
+    margin-left: 0px; }
+
+  .navbar .menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    margin-top: 40px;
+    text-align: center;
+    background: #ffffff; }
+
+  .navbar .menu-icon > svg path {
+    fill: white; }
+
+  .navbar label[for="nav-toggler"] {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer; } }
+.nav {
+  height: 100px;
+  background: #26a26f; }
+  .nav li {
+    float: right;
+    margin-left: 30px;
+    list-style: none;
+    line-height: 96px;
+    border-bottom: 4px solid #26a26f; }
+    .nav li:hover {
+      border-bottom: 4px solid #ffffff; }
+    .nav li a {
+      text-decoration: none;
+      color: #ffffff; }
+
+ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  line-height: 100px; }
+
+.foot {
+  line-height: 30px;
+  color: #ffffff; }
+  .foot .col-lg-3, .foot .col-lg-offset-10 {
+    padding: 15px 0; }
+    .foot .col-lg-3 span, .foot .col-lg-offset-10 span {
+      padding: 2px;
+      border-bottom: 1px solid #26a26f; }
+      .foot .col-lg-3 span:hover, .foot .col-lg-offset-10 span:hover {
+        border-bottom: 1px solid #ffffff; }
+
+.copyright {
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 25px;
+  border-top: 1px solid #ffffff; }
+
+/*# sourceMappingURL=task14-head-foot.css.map */
