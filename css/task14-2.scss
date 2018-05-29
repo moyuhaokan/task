@@ -1,17 +1,9 @@
 $font: 10px;
 $color: #26a26f;
-
-html {
-  font-size: $font;
+//这个属性是为了在动画的时候防止溢出。
+.hidden {
+  overflow: hidden;
 }
-
-
-
-
-
-
-
-
 
 
 

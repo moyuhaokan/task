@@ -72,6 +72,9 @@
     margin: 0 10px;
     color: #999; }
 
+@media (min-width: 1200px) {
+  .intro-img {
+    display: none; } }
 .show {
   display: flex;
   align-items: center;
@@ -125,10 +128,12 @@
       align-items: center;
       margin: 0;
       height: 200px;
+      z-index: 1;
       background: #fff;
-      border: 1px solid #fff; }
+      border: 1px solid #ffffff; }
       .business .business-box-distance .business-box:hover {
-        border: 1px solid black; }
+        z-index: 999;
+        border: 1px solid #d43f3a; }
       .business .business-box-distance .business-box img {
         max-height: 178px;
         max-width: 230px; }

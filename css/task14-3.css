@@ -20,10 +20,16 @@
   border-bottom: 2px solid #e6e6e6; }
 
 .venture-houver {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   line-height: 40px; }
 
+.venture-houver div {
+  width: 40%; }
+
 .venture-circular {
-  margin-left: 40%;
   margin-right: 7px;
   display: inline-block;
   width: 10px;
@@ -42,10 +48,10 @@
   font-size: 15px;
   color: #29b078; }
 
-.houver:hover .circular {
+.venture-houver:hover .venture-circular {
   background: #ff7527; }
 
-.houver:hover .name {
+.venture-houver:hover .name {
   color: #ff7527; }
 
 .tudou {
@@ -57,8 +63,7 @@
 .tudou img {
   max-width: 130px;
   float: left;
-  margin-right: 20px;
-  margin-bottom: 10px; }
+  margin: 10px auto; }
 
 .tudou div {
   padding-top: 20px; }

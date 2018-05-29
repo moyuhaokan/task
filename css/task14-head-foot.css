@@ -41,8 +41,6 @@
 .navbar input:checked ~ .nav-list {
   width: 100%;
   padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
   display: block;
   background-color: #26a26f;
   z-index: 0;

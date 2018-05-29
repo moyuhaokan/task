@@ -1,18 +1,20 @@
 $font: 10px;
 $flex: flex;
-$color: #5fc0cd;//头部颜色
+$color: #5fc0cd; //头部颜色
 $color1: #f8fafb;
 $color3: #999999;
 body {
   margin: 0;
   padding: 0;
 }
+
 .max-wid {
   max-width: 780px;
   min-width: 320px;
   height: 100vh;
   margin: auto;
 }
+
 .head {
   position: fixed;
   top: 0;
@@ -63,8 +65,8 @@ body {
     border-right: 1px solid #afbac0;
     height: 2rem;
   }
-  .select-bg{
-    width:200px;
+  .select-bg {
+    width: 200px;
     line-height: 37px;
     cursor: pointer;
     position: relative;
@@ -85,21 +87,24 @@ body {
   }
 
 }
-.select-bg:after{
-  content:' ';
+
+.select-bg:after {
+  content: ' ';
   position: absolute;
-  right:6px;
-  top:50%;
-  margin-top:-5px;
-  width:0px;
-  height:0px;
+  right: 6px;
+  top: 50%;
+  margin-top: -5px;
+  width: 0px;
+  height: 0px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #afbac0;
 }
+
 .main1 {
   margin-top: $font*8;
 }
+
 .main {
   color: #999999;
   border-bottom: 1px solid #afbac0;
@@ -134,9 +139,11 @@ body {
     color: #e63b0e;
   }
 }
+
 .main-bottom {
   margin-bottom: ($font*8);
 }
+
 .bottom {
   position: fixed;
   bottom: 0;

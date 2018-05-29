@@ -1,8 +1,7 @@
-$color: #29bde0;//头部颜色
-$color2: #ffffff;//白色
+$color: #29bde0; //头部颜色
+$color2: #ffffff; //白色
 $flex: flex;
 $font: 10px;
-
 
 body {
   max-width: 780px;
@@ -10,8 +9,9 @@ body {
   margin: auto;
   padding: 0;
 }
-$color: #29bde0;//头部颜色
-$color2: #ffffff;//白色
+
+$color: #29bde0; //头部颜色
+$color2: #ffffff; //白色
 $flex: flex;
 $font: 10px;
 body {
@@ -20,7 +20,6 @@ body {
   margin: auto;
   padding: 0;
 }
-
 
 .max-wid {
   overflow: hidden;
@@ -33,6 +32,7 @@ body {
   background: #f0f0f0;
 
 }
+
 header {
   line-height: $font*5;
   img {
@@ -41,6 +41,7 @@ header {
     vertical-align: middle;
   }
 }
+
 .mar-top {
   .main-top {
     width: 90%;
@@ -113,16 +114,19 @@ header {
     }
   }
 }
-#sidemenu{
+
+#sidemenu {
   display: none;
 }
 
 #sidemenu:checked + aside {
   left: 0%;
 }
+
 .bacg {
   background: $color;
 }
+
 #sidemenu:checked ~ #wrap {
   padding-left: 65%;
   margin-right: -50%;
@@ -137,9 +141,11 @@ aside {
   background: #f0f0f0;
   transition: 0.2s ease-out;
 }
+
 #wrap {
   transition: 0.2s ease-out;
 }
+
 label {
   border-radius: 70px;
   color: #ffffff;
@@ -153,9 +159,11 @@ label {
   text-align: center;
   display: inline-block;
 }
+
 #sideul {
   padding: 0;
 }
+
 #sideul li {
   list-style: none;
   width: 100%;
@@ -164,6 +172,7 @@ label {
   line-height: 40px;
   border-bottom: 1px solid #000000;
 }
+
 #sideul li span {
   float: right;
   margin-top: 9px;

@@ -1,17 +1,19 @@
-$color: #29bde0;//头部颜色
-$color2: #ffffff;//白色
+$color: #29bde0; //头部颜色
+$color2: #ffffff; //白色
 $flex: flex;
 $font: 10px;
 body {
   margin: 0;
   padding: 0;
 }
+
 .max-wid {
   max-width: 780px;
   min-width: 320px;
   height: 100vh;
   margin: auto;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -30,6 +32,7 @@ header {
     margin: 0 $font*2;
   }
 }
+
 .main {
   background: $color;
   .win {
@@ -43,7 +46,7 @@ header {
     }
     span {
       position: absolute;
-      top:130px ;
+      top: 130px;
       color: #ffffff;
     }
   }
@@ -59,9 +62,11 @@ header {
     line-height: $font+$font+$font;
   }
 }
+
 .date1 {
   margin-bottom: 100px;
 }
+
 .date {
   padding-left: $font*6-$font;
   padding-bottom: $font+$font;
@@ -92,7 +97,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgba(153,233,240,.8);
+  background: rgba(153, 233, 240, .8);
   .btn1 {
     width: 40%;
     height: $font*5;
