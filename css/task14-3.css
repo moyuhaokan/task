@@ -1,3 +1,6 @@
+html {
+  font-size: 16px; }
+
 .banner img {
   width: 100%; }
 
@@ -27,7 +30,9 @@
   line-height: 40px; }
 
 .venture-houver div {
-  width: 40%; }
+  display: inline-block;
+  width: 100px;
+  font-size: 14px; }
 
 .venture-circular {
   margin-right: 7px;
@@ -55,15 +60,16 @@
   color: #ff7527; }
 
 .tudou {
+  margin: 0 -15px;
   border-bottom: 2px solid #e6e6e6; }
 
-@media (min-width: 1200px) {
+@media (min-width: 530px) {
   .tudou {
-    height: 120px; } }
+    height: 150px; } }
 .tudou img {
   max-width: 130px;
   float: left;
-  margin: 10px auto; }
+  margin: 15px auto; }
 
 .tudou div {
   padding-top: 20px; }

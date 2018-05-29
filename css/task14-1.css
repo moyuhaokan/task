@@ -1,3 +1,6 @@
+html {
+  font-size: 16px; }
+
 .skill {
   display: flex;
   align-items: center;
