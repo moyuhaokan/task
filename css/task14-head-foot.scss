@@ -2,13 +2,14 @@ $font: 10px;
 $color: #26a26f;
 
 
-html {
-  font-size: 16px;
-}
 
 //头部
-
+header  {
+  height: 40px;
+  overflow: hidden;
+}
 .contact {
+  font-size: 1.6rem;
   line-height: $font*4;
   color: $color;
   background: #ffffff;
@@ -115,6 +116,7 @@ html {
 //}
 
 .navbar{
+  font-size: 1.6rem;
   height: 50px;
   display: block;
 }
@@ -209,9 +211,10 @@ html {
     height: 100px;
     background: $color;
     li {
-      //float: right;
+
       margin-left: 30px;
       list-style: none;
+      font-size: 1.6rem;
       line-height: 96px;
       border-bottom: 4px solid $color;
       &:hover {
@@ -252,6 +255,7 @@ html {
 }
 
 .foot {
+  font-size: 1.6rem;
   line-height: $font*3;
   color: #ffffff;
   .col-lg-3, .col-lg-offset-10 {
@@ -267,6 +271,7 @@ html {
 }
 
 .copyright {
+  font-size: 1.6rem;
   text-align: center;
   word-wrap:break-word;
   line-height: $font*2.5;

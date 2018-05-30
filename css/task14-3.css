@@ -1,5 +1,5 @@
 html {
-  font-size: 16px; }
+  font-size: 10px; }
 
 .banner img {
   width: 100%; }
@@ -60,7 +60,7 @@ html {
   color: #ff7527; }
 
 .tudou {
-  margin: 0 -15px;
+  margin: 0 -15px  20px;
   border-bottom: 2px solid #e6e6e6; }
 
 @media (min-width: 530px) {
@@ -79,8 +79,8 @@ html {
     display: block;
     float: none; } }
 .brief {
-  text-indent: 2rem;
-  margin: 2rem 0; }
+  padding-bottom: 40px;
+  text-indent: 2rem; }
 
 .buttom-but {
   margin-bottom: 200px; }

@@ -4,7 +4,9 @@ $color: #26a26f;
 .hidden {
   overflow: hidden;
 }
-
+html {
+  font-size: 10px;
+}
 
 
 
@@ -199,7 +201,7 @@ $color: #26a26f;
 .box:hover {
   opacity: 1;
   height: 417px;
-  transform:rotate(1440deg);
+  transform:rotate(2880deg);
 }
 
 

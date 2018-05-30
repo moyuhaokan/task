@@ -2,9 +2,8 @@ $font: 10px;
 $color: #26a26f;
 
 
-
 html {
-  font-size: 16px;
+  font-size: 10px;
 }
 
 
@@ -203,10 +202,10 @@ html {
       height: 200px;
       z-index: 1;
       background: #fff;
-      border: 1px solid #ffffff;
       &:hover {
         z-index: 999;
-        border: 1px solid #d43f3a;
+        box-shadow: 0 0 5px;
+        max-width: 99%;
       }
       img {
         max-height: 178px;
@@ -249,7 +248,7 @@ html {
 }
 .links_title-borderline {
   line-height: 30px;
-  width: 80px;
+  width: 60px;
   border-bottom: 1px solid #fff;
 }
 .links_title-borderline span {

@@ -1,5 +1,5 @@
 html {
-  font-size: 16px; }
+  font-size: 10px; }
 
 .skill {
   display: flex;
@@ -132,11 +132,11 @@ html {
       margin: 0;
       height: 200px;
       z-index: 1;
-      background: #fff;
-      border: 1px solid #ffffff; }
+      background: #fff; }
       .business .business-box-distance .business-box:hover {
         z-index: 999;
-        border: 1px solid #d43f3a; }
+        box-shadow: 0 0 5px;
+        max-width: 99%; }
       .business .business-box-distance .business-box img {
         max-height: 178px;
         max-width: 230px; }
@@ -154,7 +154,7 @@ html {
 
 .links_title-borderline {
   line-height: 30px;
-  width: 80px;
+  width: 60px;
   border-bottom: 1px solid #fff; }
 
 .links_title-borderline span {

@@ -1,6 +1,9 @@
 .hidden {
   overflow: hidden; }
 
+html {
+  font-size: 10px; }
+
 .wrap {
   padding: 30px 0;
   font-size: 10px;
@@ -173,7 +176,7 @@
 .box:hover {
   opacity: 1;
   height: 417px;
-  transform: rotate(1440deg); }
+  transform: rotate(2880deg); }
 
 .boxee {
   color: #55a8b3; }
