@@ -2,21 +2,24 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   max-width: 780px;
   min-width: 360px;
   margin: auto;
   color: #000000;
 }
+
 .body {
   background: #eff0f4;
   height: 100vh;
 }
-$color:#5fc0cd;
-$color1:#fff;
-$micolor:#e1e5e7;
-$font:10px;
-$flex:flex;
+
+$color: #5fc0cd;
+$color1: #fff;
+$micolor: #e1e5e7;
+$font: 10px;
+$flex: flex;
 .head {
   line-height: $font*6;
   font-size: $font*2;
@@ -28,9 +31,10 @@ $flex:flex;
     vertical-align: middle;
   }
 }
+
 .input {
   width: 100%;
-  margin:$font 0;
+  margin: $font 0;
   line-height: $font*3;
   color: $micolor;
   background: $color1;
@@ -46,10 +50,12 @@ $flex:flex;
     border: none;
   }
 }
+
 .btn {
   display: $flex;
   justify-content: center;
 }
+
 .btn1 {
   width: 97%;
   height: $font*5;
@@ -60,12 +66,14 @@ $flex:flex;
   border-radius: ($font/2);
   background: $color;
 }
+
 .foot {
   display: $flex;
   justify-content: space-between;
   color: $color;
   margin: $font ($font/1.5) ($font*6);
 }
+
 .there {
   display: $flex;
   align-items: center;
@@ -80,6 +88,7 @@ $flex:flex;
     margin: 0 $font;
   }
 }
+
 .threeway-in {
   display: $flex;
   margin: ($font*12) 20%;
