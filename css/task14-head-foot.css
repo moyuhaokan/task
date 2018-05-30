@@ -53,6 +53,8 @@ header {
   margin-top: 50px; }
 
 .navbar input:checked ~ .list div {
+  margin-left: -60px;
+  padding: 0 60px;
   clear: both;
   background-color: #26a26f;
   width: 100%; }
