@@ -27,11 +27,13 @@ function df() {
     var box1 = Math.floor(Math.random() * box.length);
     var box2 = Math.floor(Math.random() * box.length);
     var box3 = Math.floor(Math.random() * box.length);
-
-    if (box1 != box2 && box1 != box3 && box2 != box3) {
+    if (box1!=box2&&box1!=box3&&box2!=box3) {
         box[box1].style.backgroundColor = suiji();
         box[box2].style.backgroundColor = suiji();
         box[box3].style.backgroundColor = suiji();
+    }
+    else {
+        df()
     }
 }
 
