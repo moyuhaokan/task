@@ -1,7 +1,6 @@
 var box = $(".box");
 var time;
 
-
 function suiji() {
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
@@ -11,15 +10,9 @@ function suiji() {
 
 
 function org() {
-    box[0].style.backgroundColor = "orange";
-    box[1].style.backgroundColor = "orange";
-    box[2].style.backgroundColor = "orange";
-    box[3].style.backgroundColor = "orange";
-    box[4].style.backgroundColor = "orange";
-    box[5].style.backgroundColor = "orange";
-    box[6].style.backgroundColor = "orange";
-    box[7].style.backgroundColor = "orange";
-    box[8].style.backgroundColor = "orange";
+    for (var i= 0; i< box.length;i++) {
+        box[i].style.backgroundColor = "orange";
+    }
 }
 
 function df() {
@@ -45,4 +38,3 @@ $("#btn2").click(function () {
     org();
     clearInterval(time);
 });
-
