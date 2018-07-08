@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>计算器</title>
+    <style>
+        button {
+            display: block;
+
+            margin:50px auto;
+            width: 140px;
+            height: 40px;
+            outline: none;
+            color: #ffffff;
+            background: #f5c97b;
+        }
+        #xiang1,
+        #xiang2,
+        #xiang3,
+        #xiang4,
+        #xiang5
+        {
+            margin-top: 20px;
+            height: 30px;
+            margin-left: 43%;
+        }
+        .jieguo1,
+        .jieguo {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<button   id="btn1" >计算相对值</button>
+<input   id="xiang1" type="number" placeholder="最开始的值" />
+<input   id="xiang2" type="number" placeholder="本月的值"/>
+<p class="jieguo">结果是：<span></span></p>
+<button  id="btn2" >计算每次定投的值</button>
+<input   id="xiang3" type="number" placeholder="上个月的股票价格"/>
+<input   id="xiang4" type="number" placeholder="本月的股票价格"/>
+<input   id="xiang5" type="number" placeholder="上个月的定投值"/>
+<p class="jieguo1">结果是：<span></span></p>
+</body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+        $("#btn1").click(function () {
+            var dd = $("#xiang1").val();
+            var dd1 = $("#xiang2").val();
+            var ddd = dd1/dd;
+            $(".jieguo span").text(ddd);
+        })
+        $("#btn2").click(function () {
+            var ff = $("#xiang3").val();
+            console.log(ff)
+            var ff1 = $("#xiang4").val();
+            console.log(ff1)
+            var ff2 = $("#xiang5").val();
+            console.log(ff2);
+            var fff = (ff1 - ff) / ff;
+            console.log(fff);
+            var ffff = fff * ff2;
+            var df = ff2 *2;
+            console.log(ffff);
+            var  fffff = ffff - ff2 + df;
+            var  sd = fffff +1 ;
+            $(".jieguo1 span").text(sd);
+        })
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
