@@ -3,47 +3,26 @@
 $(document).ready(function () {
     let {log}=console;
     var key = JSON.parse(localStorage.getItem("Arr"));
-
+    var time = JSON.parse( localStorage.getItem("time"));
     var number = JSON.parse(localStorage.getItem("number"));
     var killclick = JSON.parse(localStorage.getItem("kill"));
     log(killclick)
-        // if (killclick == 0)
-
-        // }
-        //     for (var a = 0; a<key.length;a++) {
-
-        //     }
-    // log(_exist)
-    //     for (var _exist = 0; _exist<key.length;_exist++) {
-    //         var _exist=$.inArray('杀手',key);
-    //
-    //     }
-    //         if(_exist>=0){
-    //             alert('杀手 存在于数组fruit中,其在数组中索引值是: '+_exist);
-    //     }
-
-            //这是我当初存额死亡人数的下标。
-            //第一步，我要先找出杀手的死亡下标。然后根据这个来不能点击。
-            //我需要先遍历一遍原本的数组，然后选出来。
-            // if (key[a] == "杀手") {
-            //     $('.people').unbind();
-            // }
-        //
-        // }
-    //
-    // if (killclick == 0) {
-    //     for (var i = 0;i<addclass.length;i++) {
-    //         let numb = addclass[i];
-    //         $('.people').eq(numb).addClass("deadcolor");
-    //         $('.people').eq(numb).unbind();
-    //     }
-    // }
-
+    let deathNum;
     log(number);
     log(key);
     for (var i =0; i<key.length;i++) {
         add();
     }
+
+
+
+
+    $(".boxx").click(function(){
+        deathNum = $(this).index();
+        log(deathNum);
+    });
+
+
     var kee = JSON.parse(localStorage.getItem("kkk"));
     log(kee)
     let num=1;
@@ -72,24 +51,30 @@ $(document).ready(function () {
 
     var judge = false;
 //
+    localStorage
 
     if (addclass != null) {
         for (var i = 0;i<addclass.length;i++) {
             let numb = addclass[i];//这是我当初存额死亡人数的下标。
             $('.people').eq(numb).addClass("deadcolor");
             $('.people').eq(numb).unbind();
+            $(".boxx").eq(numb).unbind();
+            //这里让他不能获取下标。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+            // $(".boxx").unbind();
         }
     }
 
 
     if (killclick == 0) {
-
+        $("header div").text("杀手杀人页面");
+        $(".bottom-vote a").text("杀手悄悄地杀人");
         var kll;
         for(let c = key.length -1; c >= 0 ; c--){
             if(key[c] == "杀手"){
                 var kll = c;
                 log(kll)
                 $('.people').eq(kll).unbind();
+                $(".boxx").eq(kll).unbind();
             }
         }
         for (t=0;t<kll.length;t++) {
@@ -99,30 +84,12 @@ $(document).ready(function () {
 
 
     }
-    //
-    //
-    // for(let s = kee.length -1; s >= 0 ; s--){
-    //
-    //     if(kee[s] == "平民"){
-    //         numss +=1
-    //     }
-    // }
-    // log('numss',numss)
-    // let nums=0;
-    // for(let w = kee.length -1; w >= 0 ;w--){
-    //
-    //     if(kee[w] == "杀手"){
-    //         nums +=1
-    //     }
-    // }
+
+
  let numss=0;
-    log('nums',nums);
     let nums=0;
-    let deathNum;
-    $(".boxx").click(function(){
-        deathNum = $(this).index();
-        log(deathNum);
-    });
+
+
 
     $(".bottom-vote").click(function () {
 
@@ -140,6 +107,13 @@ $(document).ready(function () {
             localStorage.setItem('number', JSON.stringify(number));
             localStorage.removeItem('kill');
             log('numss',numss)
+            if (killclick != 0) {
+
+                time =time+1;
+                localStorage.setItem('time', JSON.stringify(time));
+
+            }
+
 
             for(let s = kee.length -1; s >= 0 ; s--){
 
@@ -154,14 +128,9 @@ $(document).ready(function () {
                     nums +=1
                 }
             }
-            if (numss === 1) {
-                localStorage.setItem(' lastwate', JSON.stringify(numss));
-                localStorage.setItem(' lastkill', JSON.stringify(nums));
-                window.location.href =  "task2-win.html";
-            }
-            else if (nums+numss<2) {
-                localStorage.setItem(' lastwate', JSON.stringify(numss));
-                localStorage.setItem(' lastkill', JSON.stringify(nums));
+            if (nums == 0|| nums ==numss) {
+                sessionStorage.setItem('Kill', JSON.stringify(nums));
+                sessionStorage.setItem('lastwate', JSON.stringify(numss));
                 window.location.href =  "task2-win.html";
             }
             else {
@@ -169,24 +138,6 @@ $(document).ready(function () {
             }
         }
     });
-
-   // if (nums == 0 ) {
-   //     window.location.href =  "task2-win.html";
-   //  }
-   //  if (nums+numss<=2) {
-   //      window.location.href =  "task2-win.html";
-   //  }
-       //;nums+numss<=2
-//        if杀手等于零的话。平民胜利。
-//
-// 杀手，if平民加上杀手的数量小于等于2的话，杀手胜利。
 });
 
-// sessionStorage.setItem('click', 6);
-// let tu =  sessionStorage.getItem("click");
-// if (tu == 6 ) {
-//     $(".bottom-vote a").text("确定");
-//
-//
-// }
 

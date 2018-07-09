@@ -32,7 +32,10 @@ $(document).ready(function () {
     log(key)
 
     var arr3 = [];
-    log(arr3);
+    var time =1;
+    localStorage.setItem('time', JSON.stringify(time));
+
+
 
     localStorage.setItem('number', JSON.stringify(arr3));
 

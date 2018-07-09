@@ -150,6 +150,7 @@ function renarr() {
         // let ren =JSON.stringify(renarr());
         // sessionStorage.setItem("key", ren);
         localStorage.clear();
+        sessionStorage.clear();
         localStorage.setItem('Arr', JSON.stringify(renarr()));
     });
 
