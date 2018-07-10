@@ -2,13 +2,13 @@
 $(".less").click(function(){
     let num = $("#range").val();
     let nn = Number(num)-1;
-        if (3<num<17) {
+    if (3<num<17) {
         $("#range").val(nn);
         console.log(num)
-            let shuri = $("#digital").val();
-            let ss = $("#range").val();
-            $("#digital").val(ss);
-            chan()
+        let shuri = $("#digital").val();
+        let ss = $("#range").val();
+        $("#digital").val(ss);
+        chan()
     } else {
         alert("数字不要超过4和18，谢谢");
     }
@@ -20,7 +20,7 @@ $(".plus").click(function(){
         $("#range").val(nnn);
         // nnn = $("#digital").val();
         // shuri  = $("#range").val(nnn);
-            console.log(nnn)
+        console.log(nnn)
         let shuri = $("#digital").val();
         let ss = $("#range").val();
         $("#digital").val(ss);
@@ -54,7 +54,7 @@ $("#digital").change(function(){
 function chan() {
     let num = $("#range").val();
     let number =  Number(num);
-    if (number<5) {
+    if (number<6) {
         $("#kill").text("1");
         let ss =Number(number)-1;
         $("#water").text(ss);
@@ -109,27 +109,33 @@ function change (){
 console.log (chan())
 function renarr() {
     let number = Number($("#digital").val());
+    // 先把杀手的人数确定好。
+    var kill;
+    if (number>5) {
+        kill =  Math.ceil(number * 0.25);
+    }
+    else {
+        kill =1;
+    }
+    console.log(kill);
+    // let shui = number - kill;
 
-    var sha = Math.ceil(number * 0.25);
-    let shui = number - sha;
-    var aa = [];
-    for (var i = 0; i < sha; i++) {
+    //生成一个空数组，然后一个for循环，让循环的值小于杀手的值，然后生成一个杀手的值，
+    // 再把杀手的值给push上去。
+    var kills = [];
+    for (var i = 0; i < kill; i++) {
         var d = "杀手";
-        aa.push(d);
+        kills.push(d);
     }
-    //b后面为平民
-    var bb = [];
-    for (var i = sha; i < number; i++) {
+    //b后面为水民。
+    var wate = [];
+    for (var i = kill; i < number; i++) {
         var d = "平民";
-        bb.push(d);
+        wate.push(d);
     }
-    var cc = aa.concat(bb);
-    //经典的洗牌算法，但是不够随机。
-    // function shuffle(cc) {
-    //     return cc.concat().sort(function (cc,b) {
-    //         return Math.random() - 0.5;
-    //     })
-    // }
+    var total = kills.concat(wate);
+
+    //这是一个洗牌算法，直接使用即可。
     Array.prototype.shuffle = function () {
         var input = this;
 
@@ -143,28 +149,13 @@ function renarr() {
         }
         return input;
     }
-    return cc.shuffle();
+    // 最后的时候把想要乱序的数组给执行一项函数就可以。
+    return total.shuffle();
 }
 
-    $(".bottom-vote").click(function(){
-        // let ren =JSON.stringify(renarr());
-        // sessionStorage.setItem("key", ren);
-        localStorage.clear();
-        sessionStorage.clear();
-        localStorage.setItem('Arr', JSON.stringify(renarr()));
-    });
-
-
-
-
-// localStorage.setItem("key",renarr());
-// fill的方法，首先生成一个全部的数组，所有人数。
-// var 人数 = fill(shuiming);
-// 第二步，声明一个杀手的变量，
-// let sha = 杀手；
-// 最后一步填充。
-// 人数.fill("杀手", 0, sha);
-
-
-
-
+$(".bottom-vote").click(function(){
+    //每次开始游戏都把以前的数据给清除掉，各种身份各种数组，然后再存已经乱序好的身份。
+    localStorage.clear();
+    sessionStorage.clear();
+    localStorage.setItem('Arr', JSON.stringify(renarr()));
+});

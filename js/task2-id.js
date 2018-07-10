@@ -1,13 +1,8 @@
 
-
-
 var key = localStorage.getItem("Arr");
 var kk = JSON.parse(key);
-var test;
-console.log(kk)
 
-// var link=kk.length;
-
+//声明各种变量，以方便便判断人数。
 var count = 1;
 var cnt = 1;
 let cto =1;
@@ -52,11 +47,6 @@ function another() {
 function topnum() {
     $(".id").text(math());
 }
-function linklenth() {
-
-}
-
-//----------------------------用来改变顶部数字身份身份使用
 
 //----------------------------用来改变第变化背景图片使用
 function  backgro(){
@@ -88,11 +78,9 @@ function show() {
 
 function Nextpage() {
     if ((kk.length+0.5) === math2()){
-        $(".te").show()
-        $(".ttt").hide()
-        $(".dsd").show()
-
-
+        $(".judge-btn").show();
+        $(".ched").hide();
+        $(".judge").show();
     }
 }
 
