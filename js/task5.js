@@ -60,7 +60,7 @@
                         var jsons = JSON.parse(xmlhttp.responseText);//reponsetext通过这个属性祈福会服务器的返回数据。
                         console.log(jsons);
                         if (jsons.code === 0) {
-                            window.location.href = "https://www.qq.com/"
+                            window.location.href = "http://dev.admin.carrots.ptteng.com/#/login"
                         } else {
                             alert("账号或密码错误")
                     }
