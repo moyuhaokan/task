@@ -32,15 +32,17 @@
     background-image:none;
 
     background-repeat: repeat-x;
-
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 
 }
 
-.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    height: 400px;
-}
 
+@media only screen and (min-width: 1200px) {
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        height: 600px;
+    }
+
+}
 
 /*//为什么要让孩子学习编程。*/
 .codeKing,
@@ -175,6 +177,23 @@
 .select-img  {
    display: flex;
     justify-content: center;
+}
+
+
+
+
+ol.carousel-indicators li {
+    border-radius: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #0f0f0f;
+}
+
+ol.carousel-indicators li.active {
+    border-radius: 0;
+    width: 13px;
+    height: 13px;
+    background: #0f0f0f;
 }
 
 
@@ -354,15 +373,16 @@
     align-content: center;
 }
 .black-technology-int {
+    line-height: 40px;
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-left: calc(50% - 115px);
 }
 .black-technology-jie {
     width: 230px;
     color: #666;
-    line-height: 20px;
+    line-height: 28px;
     margin-left: calc(50% - 115px);
 }
 .faceto {
@@ -408,7 +428,11 @@
 /*.box img {*/
     /*width: calc(100% - 30px);*/
 /*}*/
+.game-img {
+    border-radius: 8px 8px 0 0;
+}
 .game-box {
+    border-radius: 8px;
     color: #333;
     background: #d2ebe9;
 }
@@ -434,16 +458,21 @@
 .works {
     font-size: 12px;
    color: #abc3c1;
+    font-weight: bold;
     line-height: 20px;
 }
-
+.game-box p {
+    color: #x2a2f2f;
+}
 
 .game-author img {
-    width: 15px;
+    width: 13px;
     margin-right: 10px;
 }
 .game-author {
-    font-size: 15px;
+    line-height: 30px;
+    color: #48504f;
+    font-size: 13px;
 }
 
 
