@@ -1,61 +1,368 @@
+
 <!DOCTYPE html>
-	<head>
-		
-		<title>index</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style type="text/css">
-		body {
-			margin:0;
-			padding: 0;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../css/bootstrap.css" >
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>少儿编程</title>
 
-		}
-			.container {
-			
-				width: 100;
-				height: 100vh;
-				line-height: 30px;
-				background-image: url("back.jpg");
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
+</head>
+<body>
+    <!--//导航栏组件-->
+    <div class="width-col">
+        <nav class="container navbar-default navbar background " role="navigation">
 
-			}
-			a {
-				margin-left: 30%;
-				text-decoration: none;
-				color: black;
-			}
-			p {
-				margin:0;
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<p>css任务</p>
-			<div><a href="task1.html">task1</a></div>
-			<div><a href="task3.html">task3</a></div>
-			<div><a href="task4.html">task4</a></div>
-			<div><a href="task5.html">task5</a></div>
-			<div><a href="task6.html">task6</a></div>
-			<div><a href="task7-1.html">task7</a></div>
-			<div><a href="task8-1.html">task8</a></div>
-			<div><a href="task8-1.html">task9</a></div>
-			<div><a href="task10.html">task10</a></div>
-			<div><a href="task11.html">task11</a></div>
-			<div><a href="task12-1.html">task12</a></div>
-			<div><a href="task13-1.html">task13</a></div>
-			<div><a href="task14-1.html">task14</a></div>
-			<div><a href="task14-1.html">task15</a></div>
-			<p>js任务</p>
-			<div><a href="../jshtml/task1.html">task1</a></div>
-			<div><a href="../jshtml/task2.html">task2-4未完成</a></div>
-	
-			<div><a href="../jshtml/task5.html">task5未完成</a></div>
-			<div><a href="../jshtml/task6.html">task6-10未完成</a></div>
-			
-			<div><a href="task11.html">task11未完成</a></div>
+            <div class="navbar-header">
+                            <span>
+                            <img src="../images/nav-icon.png"/></span>
 
-		</div>
-	</body>
+                <div><button type="button" class="navbar-toggle  nav-position" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar navbar-nav navbar-right ">
+                    <li class="nav-head-border"><a href="#">首 页</a></li>
+                    <li class=""><a href="#">课程体系</a></li>
+                    <li class=""><a href="#">上课地点</a></li>
+                    <li class=""><a href="about-us.html">关 于 我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        <!--//轮播图-->
+    <div class="container car-position">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../images/banner1.png" height="600" width="1200"/></div>
+                <div class="item">
+
+                    <img src="../images/banner2.png" height="600" width="1200"/></div>
+                <div class="item">
+
+                    <img src="../images/banner3.png" height="600" width="1200"/></div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--//为什么要让孩子学习编程。-->
+    <div class="container why-learn">
+    <img class="" src="../images/why-learn.png"/>
+    </div>
+    <div class="container fillet">
+        <h4 class="stand">让孩子站在人工智能的时代前沿</h4>
+        <div class="skill">
+            <div class="skill-img col-lg-3 col-md-6 col-xs-12">
+                <div class="skill-img1"></div>
+                <span>拥有逻辑思维</span>
+            </div>
+            <div class="skill-img col-lg-3 col-md-6 col-xs-12">
+                <div class="skill-img2"></div>
+                <span>掌握编程技能</span>
+            </div>
+            <div class="skill-img col-lg-3 col-md-6 col-xs-12">
+                <div class="skill-img3"></div>
+                <span>拥有批判思维</span>
+            </div>
+            <div class="skill-img col-lg-3 col-md-6 col-xs-12">
+                <div class="skill-img4"></div>
+                <span>拥有创新能力</span>
+            </div>
+        </div>
+        <div class="sort-line"></div>
+        <div class="achievement">从兴趣到成就</div>
+        <div class="create">让孩子从程序使用者变为创作者</div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-lg-4 game">
+                <div class="game-applet">Scratch小程序</div>
+                <div class="game-box">
+                    <img class="game-img" src="../images/game1.png"/>
+                    <p class="works">作品1</p>
+                    <p>反弹小球</p>
+                    <p><img src="../images/gameAuthor.png"/>郑明阳</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 game">
+                <div class="game-applet">Scratch小程序</div>
+                <div class="game-box" >
+                    <img class="game-img" src="../images/game2.png"/>
+                    <p class="works">作品2</p>
+                    <p>小猫找朋友</p>
+                    <p><img src="../images/gameAuthor.png"/>刘博源</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 game">
+                <div class="game-applet">Scratch小程序</div>
+                <div class="game-box">
+                    <img class="game-img" src="../images/game2.png" />
+                    <p class="works">作品3</p>
+                    <p>魔法师的表演</p>
+                    <p class="game-author"><img src="../images/gameAuthor.png"/>
+                        王浩宇</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact-us">
+            联系我们 ：固定电话 0371-67913389  王老师 15638891136  王老师 15236287235
+        </div>
+    </div>
+    <div class="container codeKing">
+        <img class="" src="../images/ChoiceCodeKing.png"/>
+    </div>
+
+
+
+
+
+
+    <div class="container select">
+        <p class="select-internet">互联网+奥数培训专家的强强联合</p>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-6 classroom">
+                <p>互联网领航者打造课程</p>
+                <ul>
+                    <li>IT修真院是一家优秀的成人培训机构，自创办以来学员就业率99.5%，业内一致好评，BAT、搜狐、京东大咖亲自代言</li>
+                    <li>全国范围共设7大分院，北京、上海、深圳、武汉、成都、郑州、西安，足迹遍布全国</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-6 select-img">
+                <img src="../images/classroom.png"/>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-6 select-img">
+                <img src="../images/teacher.png"/></div>
+            <div class="col-xs-12 col-md-12 col-lg-6  classroom">
+                <p>知名奥数培训教师指导</p>
+                <ul>
+                    <li>
+                        畅逸博教育奥数老师团队二十余年少儿奥数培训经验，知名奥数培训教师指导。</li>
+                    <li>精通儿童心理学，因材施教充分发掘儿童创造力，想象力</li>
+                </ul>
+            </div>
+        </div>
+        <div class="all-dc">全博士课程顾问阵容</div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-xs-12 doctor">
+                <div class="doctorint">
+                    <div class="doctorint-img1"></div>
+                    <p>苏博士</p>
+                </div>
+                <p class="doctor-title">医学博士后</p>
+                <p class="doctor-title">中华医学会数字骨科学组委员、</p>
+                <p class="doctor-title">SICOT部创伤学会委员、</p>
+                <p class="doctor-title">数字骨科学会委员</p>
+                <p class="doctor-main">未来是数字的世界</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12 doctor">
+                <div class="doctorint">
+                    <div class="doctorint-img2"></div>
+                    <p>杜博士</p>
+                </div>
+                <p class="doctor-title">副教授</p>
+                <p class="doctor-title">河南省教师教育专家，</p>
+                <p class="doctor-title">长期从事青少年与新媒体教育研究工作中</p>
+                <p class="doctor-title"></p>
+                <p class="doctor-main">人工智能+教育，未来无限可能</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12 doctor">
+                <div class="doctorint">
+                    <div class="doctorint-img3"></div>
+                    <p>薛博士</p>
+                </div>
+                <p class="doctor-title">硕士研究生导师</p>
+                <p class="doctor-title">中国工艺美术学会会员，</p>
+                <p class="doctor-title">中国艺术人类学会会员，</p>
+                <p class="doctor-title">主持国家级和省部级研究课题4项</p>
+                <p class="doctor-main">艺术与科技是人类文明的双引擎</p>
+            </div>
+        </div>
+        <!--丰富的课程体系-->
+        <p></p>
+        <div class="row fuil">
+            <div class="col-xs-12 col-md-12 col-lg-4 suit">
+                <img src="../images/graph.png" height="42" width="42"/>
+                <p>LEGO乐高</p>
+                <ul>
+                    <li>适合年龄1-5岁</li>
+                </ul>
+                <span>创意拼接，妙不可言让每一位孩子亲自动手搭建机器人模型，开启丰富想象力</span>
+            </div>
+            <div class="col-lg-4 suit-pen">
+                <img src="../images/pen.png" height="255" width="278"/>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 suit">
+                <img src="../images/data.png" height="42" width="42"/>
+                <p>机器人</p>
+                <ul>
+                    <li>适合年龄5-7岁</li>
+                </ul>
+                <span>通过编写Scratch代码去命令机器人，是我们下一代必备的工作技能和生活技能</span>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 suit">
+                <img src="../images/scratchLogo.png" height="42" width="42"/>
+                <p>Scratch</p>
+                <ul>
+                    <li>适合年龄7-12岁</li>
+                </ul>
+                <span>由麻省理工(MIT)设计开发的少儿编程工具，无可挑剔的少儿编程入门语言</span>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 suit">
+                <img src="../images/css.png" height="42" width="42"/>
+                <p>Css</p>
+                <ul>
+                    <li>适合年龄12-15岁</li>
+                </ul>
+                <span>CSS 文件编码技能是WEB工程师的必备技能，是少儿编程不可缺少的一部分</span>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4 suit">
+                <img src="../images/python.png" height="42" width="42"/>
+                <p>Python</p>
+                <ul>
+                    <li>适合年龄15岁以上</li>
+                </ul>
+                <span>互联网时代的新宠，学习大数据与机械必备语言，简洁清晰、强大、胶水语言</span>
+            </div>
+        </div>
+        <div class="fun">
+            <div class="col-lg-6  col-xs-12 fun-title">
+                <p>有趣的课堂内容</p>
+                <div><span class="dot"></span><span class="funint">二十余年的少儿教育经验的教师精心教导，激发孩子的聪明才智</span></div>
+                <div><span class="dot"></span><span class="funint">每节课都有独特的剧情带入，让孩子体验到有趣的课堂内容</span></div>
+                    <div><span class="dot"></span><span class="funint">
+讲述与课堂相关的现代黑科技，带学生体验当代前沿黑科技</span></div>
+            </div>
+            <div class="col-lg-6   col-xs-12 fun-img">
+                <img src="../images/classContent.png"/>
+            </div>
+        </div>
+
+        <p class="black-technology">黑科技延伸</p>
+
+        <div class="row">
+            <div class="col-md-6 col-xs-12 col-lg-3  ">
+                <div class="introduce"><img src="../images/vr.png" height="169" width="230"/></div>
+                <p class="black-technology-int">虚拟现实</p>
+                <p class="black-technology-jie">vive pro VR智能眼镜
+                    孩子们通过三维虚拟学习环境和编码近距离接触</p>
+            </div>
+            <div class="col-md-6 col-xs-12 col-lg-3 ">
+                <div class="introduce"><img src="../images/discern.png" height="169" width="230"/></div>
+                <p class="black-technology-int">3D打印机</p>
+                <p class="black-technology-jie">603S高精度3维打印机
+                    让孩子们通过自己想象力，创造从无到有的过程</p>
+            </div>
+            <div class="col-md-6 col-xs-12 col-lg-3 ">
+                <div class="introduce"><img src="../images/robot.jpg" height="169" width="230"/></div>
+                <p class="black-technology-int">智能机器人</p>
+                <p class="black-technology-jie">MINDSTORMS第三代机器人
+                    通过编写程序命令机器人，开启丰富想象力</p>
+            </div>
+            <div class="col-md-6 col-xs-12 col-lg-3 ">
+                <div class="introduce"><img src="../images/ai.png" height="169" width="230"/></div>
+                <p class="black-technology-int">其他智能硬件</p>
+                <p class="black-technology-jie">激光键盘</p>
+                <p class="black-technology-jie">联想看家机器人
+                </p>
+                <p class="black-technology-jie">无线激光投影键盘
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container faceto">
+        <img src="../images/faceTofuture.png" />
+    </div>
+
+
+
+    <div class="container facetofuture">
+        <img  class="datemate" src="../images/dataMap.png"/>
+
+            <div class="col-xs-12 col-lg-6 box ">
+                <div><img src="../images/study.jpg" /></div>
+                <p class="facetofuture-title">编程王为孩子将来打基础</p>
+                <p class="facetofuture-contai">在思考分析问题和完成程序的过程中去培养编程思维，是培养孩子细心和专注的最佳工具。在组队完成创作作品的过程中，提升孩子的团队协作能力。编程将逐渐纳入基础教育，提前学习编程，为留学升学加码</p>
+            </div>
+            <div class="col-xs-12 col-lg-6 box">
+                <div><img src="../images/school.jpg"/></div>
+                <p class="facetofuture-title">特招或考入名校</p>
+                <p class="facetofuture-contai">2018年1月，教育部颁发的《新课程标准》指出：信息技术将从兴趣课程变为必修课程，并大幅度提升了学生在编程、计算思维、算法方面的思维要求，给予学生更大的发展选择空间（浙江省已明确要求）</p>
+            </div>
+    </div>
+    <p class="class-environment">上课环境</p>
+    <p class="class-environment-add">地处郑州市金水区，有良好的教学环境，室内设备齐全，拥有少儿编程最先进的设备</p>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-xs-12 environment">
+            <img src="../images/environment1.jpg" /></div>
+        <div class="col-lg-4 col-xs-12 environment">
+            <img src="../images/environment2.jpg"/></div>
+        <div class="col-lg-4 col-xs-12 environment">
+            <img src="../images/environment3.jpg" /></div>
+    </div>
+    </div>
+    <p class="class-environment">上课地点</p>
+    <p class="class-environment-add">地址：河南省郑州市金水区健康路159号发展大厦3楼</p>
+    <div class="container class-map">
+        <img src="../images/map-noText.png"/>
+    </div>
+
+
+<!--//底部信息-->
+    <footer>
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-xs-12 foot-contact">
+                <p><span>客服电话：</span>0371-67913389</p>
+                <p><span>工作时间：</span>周一至周日</p>
+                <p><span>手机号码：</span>15638891136</p>
+                <p><span>总部地址：</span>上海市宝山区绿地领海13号楼1302</p>
+                <div type="button" class="btn btn-success">联系我们</div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12 foot-wechat">
+                <img src="../images/weChat.png" />
+                <p>扫描二维码或搜索编程王即可关注</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
 </html>
