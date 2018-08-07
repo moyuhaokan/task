@@ -78,16 +78,16 @@
 
 #navbar-menu .navbar-right a {
     margin-left: 2rem;
-    line-height: 128px;
     text-decoration: none;
 }
 
-/*@media (min-width: 1200px) {*/
-    /*.but-right {*/
-        /*margin-right: 20px;*/
-        /*float: right;*/
-    /*}*/
-/*}*/
+@media (min-width: 720px) {
+    #navbar-menu .navbar-right a {
+        margin-left: 2rem;
+        line-height: 128px;
+        text-decoration: none;
+    }
+}
 
 
 
@@ -112,7 +112,7 @@ body {
 
 /*底部样式*/
 footer {
-    font-size: 12px;
+    font-size: 16px;
     color: #c4c7c7;
     background: #36807f;
 }

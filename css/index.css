@@ -114,7 +114,9 @@
     font-size: 18px;
     color: #666;
 }
-
+.introduce img {
+    border-radius: 8px;
+}
 .sort-line {
     width: 30px;
     height: 3px;
