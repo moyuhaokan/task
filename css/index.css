@@ -1,0 +1,492 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////无阴影的代码*/
+.carousel-control.left {
+
+    background-image:none;
+
+    background-repeat: repeat-x;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+
+}
+
+.carousel-control.right {
+
+    left: auto; right: 0;
+
+    background-image:none;
+
+    background-repeat: repeat-x;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 400px;
+}
+
+
+/*//为什么要让孩子学习编程。*/
+.codeKing,
+.why-learn {
+    display: flex;
+    justify-content: center;
+}
+.codeKing img ,
+.why-learn img {
+    height: 200px;
+    width: 50%;
+}
+
+
+/*///圆角属性。*/
+.fillet {
+    border-radius: 8px;
+    background: #fff;
+}
+
+.stand {
+    margin-top: 90px;
+    margin-bottom: 56px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: #1f9d92;
+}
+.skill-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.skill-img1,
+.skill-img2,
+.skill-img3,
+.skill-img4
+{
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    background: #d2ebe9;
+
+}
+.skill-img1 {
+    background-image: url("../images/computer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skill-img2 {
+    background-image: url("../images/counter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skill-img3 {
+    background-image: url("../images/magnet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skill-img4 {
+    background-image: url("../images/light.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill .skill-img span {
+    line-height: 76px;
+    font-size: 18px;
+    color: #666;
+}
+
+.sort-line {
+    width: 30px;
+    height: 3px;
+    background: #d2ebe9;
+    display: table;
+    margin-top: 60px;
+    margin-left: calc(50% - 30px);
+    margin-bottom: 90px;
+}
+.achievement {
+    text-align: center;
+    font-size: 23px;
+    color: #1f9d92;
+}
+.create {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: #1f9d92;
+}
+.contact-us {
+    text-align: center;
+    color: #266996;
+    font-size: 15px;
+    line-height: 70px;
+    background: #ccbecf;
+    margin: 0 -15px;
+    border-radius: 0 0 8px 8px;
+}
+
+/*为什么要让孩子选择编程王*/
+.select {
+    border-radius: 8px;
+    background: #fff;
+}
+.select-internet {
+    color: #1f9d92;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 77px 0 60px;
+}
+.classroom {
+    margin-top: 30px;
+}
+.classroom p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    color: #333;
+}
+.classroom ul {
+    list-style: square inside;
+}
+.classroom li {
+    line-height: 30px;
+    color: #666;
+}
+.select-img  {
+   display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.all-dc {
+    margin: 30px 0 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+.doctorint {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     align-content: center;
+}
+.doctorint-img1
+{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../images/doctorSu.png);
+    background-repeat: no-repeat;
+}
+.doctorint-img2
+{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../images/doctorDu.png);
+    background-repeat: no-repeat;
+}
+
+
+.doctorint-img3 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url(../images/doctorXue.png);
+    background-repeat: no-repeat;
+}
+.doctorint p {
+    font-weight: bold;
+    color: #333;
+}
+.doctor-title {
+    margin-left: calc(50% - 85px);
+    width: 208px;
+    color: #666;
+
+}
+  .doctor-main {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      margin-left: calc(50% - 85px);
+    color: #2ea499;
+  }
+  .fuil {
+      margin-top: 40px;
+      background: #ccbecf;
+  }
+.suit {
+    height: 300px;
+    color: #266996;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.suit p {
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.suit span {
+    width: 200px;
+    line-height: 30px;
+}
+.suit img {
+    margin-top: 30px;
+}
+.suit-pen {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+@media only screen and (max-width: 1200px) {
+    .suit-pen {
+        display: none;
+    }
+}
+
+
+
+/*有趣的课堂中心*/
+@media only screen and (min-width: 1200px) {
+    .fun-img img {
+        width: 70%;
+        height: 280px;
+        margin: auto;
+        border-radius: 8px;
+    }
+}
+
+.fun-img img {
+    width: 70%;
+    height: 280px;
+    margin: auto;
+    border-radius: 0 8px 8px 0;
+}
+.fun-img {
+    display: flex;
+    justify-content: center;
+}
+.fun-title {
+    text-align: center;
+    color: #6d6f6f;
+}
+.fun-title p {
+    margin-top: 40px;
+
+    color: #1f9d92;
+    margin-left: 40px;
+}
+.fun-title span {
+    line-height: 35px;
+    margin-left: 40px;
+}
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #1f9d92;
+}
+.funint {
+    display: inline-block;
+}
+@media only screen and (min-width: 1200px) {
+    .fun {
+        margin: 40px auto;
+        width: 90%;
+        height: 280px;
+        border-radius: 8px;
+        background: #d2ebe9;
+    }
+    .fun-img {
+        padding: 0;
+    }
+    .fun-img img {
+        width: 100%;
+        height: 280px;
+        border-radius: 0 8px 8px 0;
+    }
+
+}
+
+
+
+
+
+.black-technology {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f9d92;
+}
+
+.introduce {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.black-technology-int {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: calc(50% - 115px);
+}
+.black-technology-jie {
+    width: 230px;
+    color: #666;
+    line-height: 20px;
+    margin-left: calc(50% - 115px);
+}
+.faceto {
+    display: flex;
+    justify-content: center;
+}
+.faceto img {
+    height: 200px;
+    width: 50%;
+}
+.facetofuture {
+    border-radius: 8px;
+    background: #fff;
+}
+.datemate {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+.facetofuture-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f9d92;
+    line-height: 40px;
+   margin: 40px;
+}
+.facetofuture-contai {
+    margin: 40px;
+    color: #747877;
+}
+
+.box {
+    border-radius: 8px;
+    background: #d2ebe9;
+}
+.box div {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*.box img {*/
+    /*width: calc(100% - 30px);*/
+/*}*/
+.game-box {
+    color: #333;
+    background: #d2ebe9;
+}
+@media only screen and (max-width: 1200px) {
+    .game-box {
+        margin-left:  calc(50% - 200px);
+      width: 400px;
+    }
+}
+.game-applet {
+    margin-top: 30px;
+    width: 128px;
+    line-height: 38px;
+    background: #f9c474;
+    color: #7d6541;
+    text-align: center;
+    margin-left: calc(50% - 64px);
+    transform:rotate(30deg);
+}
+.game p {
+    margin-left: 30px;
+}
+.works {
+    font-size: 12px;
+   color: #abc3c1;
+    line-height: 20px;
+}
+
+
+.game-author img {
+    width: 15px;
+    margin-right: 10px;
+}
+.game-author {
+    font-size: 15px;
+}
+
+
+
+
+
+
+.class-environment {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.class-environment-add {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+.environment {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.environment img {
+    width: 300px;
+    height: 300px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .environment img {
+        width: 100%;
+        height: 300px;
+    }
+}
+.class-map {
+    margin-bottom: 20px;
+    height: 335px;
+}
+.class-map img {
+
+    height: 335px;
+    width: 100%;
+}
+
