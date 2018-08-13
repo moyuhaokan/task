@@ -9,10 +9,17 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
     <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/ce.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/index.css">
+
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
     <title>少儿编程</title>
 
 </head>
@@ -23,7 +30,7 @@
 
             <div class="navbar-header">
                             <span>
-                            <img src="../images/nav-icon.png"/></span>
+                            <a href="index.html"><img src="../images/nav-icon.png"/></a></span>
 
                 <div class="nav-position"><button type="button" class="navbar-toggle  " data-toggle="collapse" data-target="#navbar-menu">
                     <span class="sr-only">切换导航</span>
@@ -142,7 +149,7 @@
             联系我们 ：固定电话 0371-67913389  王老师 15638891136  王老师 15236287235
         </div>
     </div>
-    <div class="container codeKing">
+    <div id="pen" class="container codeKing">
         <img class="" src="../images/ChoiceCodeKing.png"/>
     </div>
 
@@ -151,7 +158,7 @@
 
 
 
-    <div class="container select">
+    <div  class="container select">
         <p class="select-internet">互联网+奥数培训专家的强强联合</p>
         <div class="row">
             <div class="col-xs-12 col-md-12 col-lg-6 classroom">
@@ -195,7 +202,7 @@
                 </div>
                 <p class="doctor-title">副教授</p>
                 <p class="doctor-title">河南省教师教育专家，</p>
-                <p id="pen" class="doctor-title">长期从事青少年与新媒体教育研究工作中</p>
+                <p  class="doctor-title">长期从事青少年与新媒体教育研究工作中</p>
                 <p class="doctor-title"></p>
                 <p class="doctor-main">人工智能+教育，未来无限可能</p>
             </div>
@@ -214,6 +221,7 @@
         <!--丰富的课程体系-->
         <p></p>
         <div class="row fuil" >
+            <p class="fuil-class">丰富的课程体系</p>
             <div class="col-xs-12 col-md-12 col-lg-4 suit">
                 <img src="../images/graph.png" height="42" width="42"/>
                 <p>LEGO乐高</p>
@@ -272,25 +280,29 @@
         </div>
 
         <p class="black-technology">黑科技延伸</p>
-
-        <div class="row">
+        <div class="row widdth">
             <div class="col-md-6 col-xs-12 col-lg-3  ">
                 <div class="introduce"><img src="../images/vr.png" height="169" width="230"/></div>
                 <p class="black-technology-int">虚拟现实</p>
                 <p class="black-technology-jie">vive pro VR智能眼镜
-                    孩子们通过三维虚拟学习环境和编码近距离接触</p>
+                    </p>
+                <p class="black-technology-jie">孩子们通过三维虚拟学习环境和编码近距离接触</p>
             </div>
             <div class="col-md-6 col-xs-12 col-lg-3 ">
                 <div class="introduce"><img src="../images/discern.png" height="169" width="230"/></div>
                 <p class="black-technology-int">3D打印机</p>
                 <p class="black-technology-jie">603S高精度3维打印机
-                    让孩子们通过自己想象力，创造从无到有的过程</p>
+                   </p>
+                <p class="black-technology-jie"> 让孩子们通过自己想象力，创造从无到有的过程</p>
+                <p class="black-technology-jie"></p>
             </div>
             <div class="col-md-6 col-xs-12 col-lg-3 ">
                 <div class="introduce"><img src="../images/robot.jpg" height="169" width="230"/></div>
                 <p class="black-technology-int">智能机器人</p>
                 <p class="black-technology-jie">MINDSTORMS第三代机器人
-                    通过编写程序命令机器人，开启丰富想象力</p>
+                   </p>
+                <p class="black-technology-jie"> 通过编写程序命令机器人，开启丰富想象力</p>
+                <p class="black-technology-jie"></p>
             </div>
             <div class="col-md-6 col-xs-12 col-lg-3 ">
                 <div class="introduce"><img src="../images/ai.png" height="169" width="230"/></div>
@@ -303,32 +315,34 @@
             </div>
         </div>
     </div>
-
-
     <div class="container faceto">
         <img src="../images/faceTofuture.png" />
     </div>
-
-
-
     <div class="container facetofuture">
+        <p class="shiye">城镇登记失业率（%）</p>
         <img  class="datemate" src="../images/dataMap.png"/>
-
+        <div class="row widdth">
             <div class="col-xs-12 col-lg-6 box ">
+                <div class="box-box">
                 <div><img src="../images/study.jpg" /></div>
                 <p class="facetofuture-title">编程王为孩子将来打基础</p>
                 <p class="facetofuture-contai">在思考分析问题和完成程序的过程中去培养编程思维，是培养孩子细心和专注的最佳工具。在组队完成创作作品的过程中，提升孩子的团队协作能力。编程将逐渐纳入基础教育，提前学习编程，为留学升学加码</p>
-            </div>
+                </div>
+        </div>
             <div class="col-xs-12 col-lg-6 box">
+                <div class="box-box">
                 <div><img src="../images/school.jpg"/></div>
                 <p class="facetofuture-title">特招或考入名校</p>
                 <p class="facetofuture-contai">2018年1月，教育部颁发的《新课程标准》指出：信息技术将从兴趣课程变为必修课程，并大幅度提升了学生在编程、计算思维、算法方面的思维要求，给予学生更大的发展选择空间（浙江省已明确要求）</p>
+                </div>
             </div>
+        </div>
     </div>
+
     <p class="class-environment">上课环境</p>
     <p class="class-environment-add">地处郑州市金水区，有良好的教学环境，室内设备齐全，拥有少儿编程最先进的设备</p>
     <div class="container">
-    <div class="row" id ="class1">
+    <div class="row widdth" id ="class1">
         <div class="col-lg-4 col-xs-12 environment">
             <img src="../images/environment1.jpg" /></div>
         <div class="col-lg-4 col-xs-12 environment">
@@ -339,8 +353,8 @@
     </div>
     <p class="class-environment" >上课地点</p>
     <p class="class-environment-add">地址：河南省郑州市金水区健康路159号发展大厦3楼</p>
-    <div class="container class-map">
-        <img src="../images/map-noText.png"/>
+    <div class="container"> <div class=" about-img"></div></div>
+
     </div>
 
 
@@ -352,7 +366,7 @@
                 <p><span>工作时间：</span>周一至周日</p>
                 <p><span>手机号码：</span>15638891136</p>
                 <p><span>总部地址：</span>上海市宝山区绿地领海13号楼1302</p>
-                <div type="button" class="btn btn-success">联系我们</div>
+                <div type="button" class="btn btn-success btn-back">联系我们</div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-xs-12 foot-wechat">
@@ -398,4 +412,101 @@
 
 
 </body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(488.641868,-11.361113);//定义一个中心点坐标
+        map.centerAndZoom(point,1);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+//向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+//向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+//向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"我的标记",content:"我的备注",point:"113.670939|34.779299",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
 </html>

@@ -9,41 +9,42 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/ce.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/about-us.css">
     <title>关于我们</title>
 </head>
 <body>
-
 <!--//导航栏组件-->
 <div class="width-col">
     <nav class="container navbar-default navbar background " role="navigation">
 
         <div class="navbar-header">
                             <span>
-                            <img src="../images/nav-icon.png"/></span>
+                            <a href="index.html"><img src="../images/nav-icon.png"/></a></span>
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <div class="nav-position"><button type="button" class="navbar-toggle  " data-toggle="collapse" data-target="#navbar-menu">
                 <span class="sr-only">切换导航</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            </div>
 
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar navbar-nav navbar-right ">
                 <li class="nav-head-border"><a href="index.html">首 页</a></li>
-                <li class=""><a href="#">课程体系</a></li>
-                <li class=""><a href="#">上课地点</a></li>
-                <li class=""><a href="#">关于我们</a></li>
+                <li class=""><a href="#pen">课程体系</a></li>
+                <li class=""><a  href="#class1">上课地点</a></li>
+                <li class=""><a href="about-us.html">关于我们</a></li>
             </ul>
         </div>
     </nav>
 </div>
-
-
 
 
 
@@ -55,7 +56,7 @@
     <p>公司投资方之一修真院培训中心为数据工程师的摇篮，成立以来，先后为全国数百家企业单位培养了数以千计的数据工程师，开办以来就业率达99.5%，同时也是国内知名的软件研发中心，是数十家高等院校的战略合作伙伴。具有丰富的教育经验和雄厚的技术研发实力。</p>
     <p class="address company">公司地址</p>
     <p class="address detailed">地址：上海市宝山区绿地领海13号楼1302</p>
-    <div class="about-img"></div>
+   <div class="about-img"></div>
 </div>
 
 
@@ -82,7 +83,7 @@
             <p><span>工作时间：</span>周一至周日</p>
             <p><span>手机号码：</span>15638891136</p>
             <p><span>总部地址：</span>上海市宝山区绿地领海13号楼1302</p>
-            <div type="button" class="btn btn-success">联系我们</div>
+            <div type="button" class="btn btn-success btn-back">联系我们</div>
         </div>
 
         <div class="col-lg-6 col-md-6 col-xs-12 foot-wechat">
@@ -91,6 +92,37 @@
         </div>
     </div>
 </footer>
-
+<!--侧边栏-->
+<div class="sidebarParent">
+    <div class="sidebarRight ">
+        <a  class="circle qqService" target="_blank"  title="点击进行在线聊天" href="http://wpa.qq.com/msgrd?v=3&uin=1145139410&site=qq&menu=yes">
+            <img class="circle_logo qqService_img" border="0" src="../images/qqService.png" alt="点击进行在线聊天"/>
+            <!--文字默认隐藏-->
+            <div class="text-white qqService_text dn">
+                <span class="text-white">在线<br/>咨询</span>
+            </div>
+        </a>
+        <div class="circle phoneService">
+            <img class="circle_logo phoneService_img" src="../images/phoneService.png" >
+            <div class="text-white phoneService_text dn">
+                <span class="text-white">联系<br/>我们</span>
+            </div>
+            <div class="phoneService_msg dn">
+                <div class="mt2 mb2 tc"><span>固话: 0371-67913389</span>
+                </div>
+                <div class="rel tc">
+                    <span> 王老师: 15638891136</span>
+                    <span class="triangle-right"></span>
+                </div>
+                <div class="mt2 mb2 tc"><span>王老师: 15236287235</span> </div>
+            </div>
+        </div>
+        <div id="toTOP" class="circle toTop"><a href="#top">
+            <img class="circle_logo toTop_img" src="../images/toTop.png" >
+            <div class="text-white toTop_text dn"><span class="text-white">返回<br/>顶部</span></div>
+        </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
