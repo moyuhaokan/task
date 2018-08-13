@@ -1,0 +1,41 @@
+
+.about {
+    margin-top: 128px;
+    color: #6d6f6f;
+}
+
+
+
+
+.about-king {
+    margin: 80px 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.address {
+    font-weight: bold;
+    text-align: center;
+}
+
+.company {
+    font-size: 14px;
+    margin: 80px 0 26px;
+}
+.detailed {
+    margin-bottom: 20px;
+}
+.about img {
+    margin: 20px auto;
+    width: 90%;
+}
+.about-img {
+    margin: 20px auto;
+    width: 87%;
+    height: 200px;
+    background-image: url("../images/map-about.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
