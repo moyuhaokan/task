@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*/////////////////////无阴影的代码*/
 .carousel-control.left {
 
@@ -52,7 +36,6 @@
 }
 .codeKing img ,
 .why-learn img {
-    height: 200px;
     width: 50%;
 }
 
@@ -111,8 +94,9 @@
 
 .skill .skill-img span {
     line-height: 76px;
-    font-size: 18px;
-    color: #666;
+    font-size: 14px;
+    color:rgba(102,102,102,1);
+    color: #666666;
 }
 .introduce img {
     border-radius: 8px;
@@ -123,12 +107,13 @@
     background: #d2ebe9;
     display: table;
     margin-top: 60px;
-    margin-left: calc(50% - 30px);
+    margin-left: calc(50% - 15px);
     margin-bottom: 90px;
 }
 .achievement {
     text-align: center;
-    font-size: 23px;
+    font-size: 17px;
+    line-height: 40px;
     color: #1f9d92;
 }
 .create {
@@ -147,6 +132,20 @@
     margin: 0 -15px;
     border-radius: 0 0 8px 8px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .contact-us {
+        text-align: center;
+        color: #266996;
+        font-size: 15px;
+        line-height: 24px;
+        background: #ccbecf;
+        margin: 0;
+        padding: 0 15px;
+        border-radius: 0 0 8px 8px;
+    }
+}
+
 
 /*为什么要让孩子选择编程王*/
 .select {
@@ -182,23 +181,29 @@
 }
 
 
-
+/*//轮播图的样式*/
 
 ol.carousel-indicators li {
     border-radius: 0;
     width: 13px;
     height: 13px;
-    border: 1px solid #0f0f0f;
+    border: 1px solid #353535;
 }
 
 ol.carousel-indicators li.active {
     border-radius: 0;
     width: 13px;
     height: 13px;
-    background: #0f0f0f;
+    background: #353535;
 }
+.glyphicon {
+    color: #353535;
+}
+/*轮播图左右宽度*/
 
-
+.carousel-control {
+    width: 70px;
+}
 
 
 
@@ -245,9 +250,10 @@ ol.carousel-indicators li.active {
     color: #333;
 }
 .doctor-title {
-    margin-left: calc(50% - 85px);
     width: 208px;
     color: #666;
+    line-height: 20px;
+    margin: 0 0 0 calc(50% - 85px);
 
 }
   .doctor-main {
@@ -260,6 +266,14 @@ ol.carousel-indicators li.active {
       margin-top: 40px;
       background: #ccbecf;
   }
+.fuil-class {
+    height:24px;
+    font-size:20px;
+    text-align: center;
+    color:#266996;
+    margin-top: 30px;
+    line-height:47px;
+}
 .suit {
     height: 300px;
     color: #266996;
@@ -272,6 +286,9 @@ ol.carousel-indicators li.active {
     line-height: 40px;
     font-weight: bold;
     font-size: 16px;
+}
+.suit ul {
+    padding: 0;
 }
 .suit span {
     width: 200px;
@@ -288,6 +305,9 @@ ol.carousel-indicators li.active {
 }
 @media only screen and (max-width: 1200px) {
     .suit-pen {
+        display: none;
+    }
+    .fuil-class {
         display: none;
     }
 }
@@ -315,14 +335,14 @@ ol.carousel-indicators li.active {
     justify-content: center;
 }
 .fun-title {
-    text-align: center;
+    font-size: 14px;
     color: #6d6f6f;
 }
 .fun-title p {
     margin-top: 40px;
-
     color: #1f9d92;
     margin-left: 40px;
+    font-size: 18px;
 }
 .fun-title span {
     line-height: 35px;
@@ -337,6 +357,7 @@ ol.carousel-indicators li.active {
 .funint {
     display: inline-block;
 }
+
 @media only screen and (min-width: 1200px) {
     .fun {
         margin: 40px auto;
@@ -352,6 +373,21 @@ ol.carousel-indicators li.active {
         width: 100%;
         height: 280px;
         border-radius: 0 8px 8px 0;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .fun-title {
+        background: #d2ebe9;
+        margin: 30px 0;
+        border-radius: 8px;
+
+    }
+    .fun-img {
+        margin-bottom: 40px;
+    }
+    .fun-img img {
+        border-radius: 8px;
     }
 
 }
@@ -384,7 +420,7 @@ ol.carousel-indicators li.active {
 .black-technology-jie {
     width: 230px;
     color: #666;
-    line-height: 28px;
+    line-height: 20px;
     margin-left: calc(50% - 115px);
 }
 .faceto {
@@ -393,7 +429,9 @@ ol.carousel-indicators li.active {
 }
 .faceto img {
     height: 200px;
+    margin-top: -25px;
     width: 50%;
+    overflow: hidden;
 }
 .facetofuture {
     border-radius: 8px;
@@ -402,6 +440,7 @@ ol.carousel-indicators li.active {
 .datemate {
     width: 100%;
     height: 370px;
+    padding: 60px 80px;
     margin-bottom: 20px;
 }
 
@@ -416,16 +455,36 @@ ol.carousel-indicators li.active {
     margin: 40px;
     color: #747877;
 }
+.shiye {
+    text-align: center;
+    line-height: 132px;
+    color:rgba(31,157,146,1);
+    font-size: 18px;
+}
 
+@media only screen and (max-width: 1200px) {
+    .datemate {
+        padding: 60px 80px;
+    }
+}
 .box {
     border-radius: 8px;
-    background: #d2ebe9;
 }
-.box div {
+/*.box div {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+/*}*/
+.box-box {
+    margin: 20px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background: #d2ebe9;
+    border-radius: 8px;
 }
-
+.box-box img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
 
 /*.box img {*/
     /*width: calc(100% - 30px);*/
@@ -464,7 +523,7 @@ ol.carousel-indicators li.active {
     line-height: 20px;
 }
 .game-box p {
-    color: #x2a2f2f;
+    color: #2a2f2f;
 }
 
 .game-author img {
@@ -485,18 +544,19 @@ ol.carousel-indicators li.active {
 .class-environment {
     margin-top: 20px;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
     color: #333;
 }
 
 .class-environment-add {
+    letter-spacing: 2px;
     text-align: center;
     font-size: 18px;
     color: #666;
 }
 .environment {
-    margin: 20px 0;
+    padding: 11px;
+    margin: 20px 0px;
     display: flex;
     justify-content: center;
 }
@@ -514,10 +574,42 @@ ol.carousel-indicators li.active {
 .class-map {
     margin-bottom: 20px;
     height: 335px;
+    width: 87%;
 }
-.class-map img {
-
-    height: 335px;
-    width: 100%;
+.widdth {
+    width: 87%;
+    margin: auto;
 }
 
+
+/*修改百度地图*/
+
+.BMap_stdMpPan {
+    display: none;
+}
+.BMap_stdMpCtrl div {
+    display: none;
+}
+.BMap_scaleCtrl div {
+    display: none;
+}
+.class-map span {
+
+    display: none;
+}
+.anchorBL img {
+    display: none;
+}
+
+.BMap_omCtrl {
+    display: none;
+}
+
+.about-img {
+    margin: 20px auto;
+    height: 200px;
+    width: 87%;
+    background-image: url("../images/map-about.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
