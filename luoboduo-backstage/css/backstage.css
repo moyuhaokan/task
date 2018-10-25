@@ -1,0 +1,103 @@
+.header {
+    background: #001529;
+}
+.header div{
+    line-height: 50px;
+    color: #5bc0de;
+}
+.header-name {
+    display: inline;
+}
+.header ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.header ul li {
+    padding: 0 5px;
+    display: inline-block;
+}
+.header ul li:hover {
+    background: #ffffff;
+}
+
+.header img {
+    width: 20px;
+}
+
+
+
+.main {
+    position: relative;
+    padding: 0;
+}
+.main-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    height: 100%;
+    background: #001529;
+    min-height: calc(100vh - 50px);
+
+}
+.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    color: #fff;
+}
+
+/*、、、、、、、、手风琴*/
+
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    background: #dbff32;
+    border: none;
+}
+.panel-group .panel-heading {
+    background: #001529;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+.panel {
+    border: none;
+}
+.main .main-sidebar .panel-body {
+    padding: 0;
+    line-height: 30px;
+    text-align: center;
+}
+#list-con,
+#list-con1,
+#list-con2,
+#list-con3,
+#list-con4,
+#list-con5,
+#list-con6
+{
+    background: #cccccc;
+}
+
+#list-con:hover,
+#list-con1:hover,
+#list-con2:hover,
+#list-con3:hover,
+#list-con4:hover,
+#list-con5:hover,
+#list-con6:hover
+{
+    background: #fff;
+}
+/*、、、、、、、、手风琴*/
+
+.main .main-view {
+    padding: 0;
+    margin-left: 25%;
+}
+@media only screen and (min-width:1200px) {
+    .main-view {
+        width: 75%;
+    }
+}

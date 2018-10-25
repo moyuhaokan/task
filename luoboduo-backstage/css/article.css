@@ -1,0 +1,138 @@
+#choice {
+    margin: 20px 0;
+    color: #8c8c8c;
+}
+.choice .begin {
+    margin-left: 8px;
+}
+.choice select {
+    height: 35px;
+    width: 100px;
+}
+.choice input {
+    height: 35px;
+
+}
+@media screen and (max-width: 1187px) {
+    .choice .end {
+        margin-top: 35px;
+        margin-left: 63px;
+    }
+}
+.zore {
+    padding: 0;
+}
+@media only screen and (max-width: 990px) {
+    .choice .row p {
+        width: 130px;
+    }
+    .style {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 690px) {
+    .article-list-state,
+    .article-list,
+    .article-list-render  {
+        width: 690px;
+    }
+
+    .main-article {
+        width: 100%;
+        overflow-y: hidden;
+        margin-top: 5px;
+    }
+}
+.search {
+    float: right;
+    margin: 35px  100px 20px 20px;
+}
+.search button {
+    margin-left: 20px;
+}
+
+.main-article {
+    margin-top: 5px;
+}
+.article-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
+    padding: 20px 10px;
+    border-radius: 8px 8px 0 0;
+    background: #f0f2f5;
+}
+/*.main-article {*/
+    /*border: 1px dashed #000000;*/
+/*}*/
+.article-list-state {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
+    padding: 20px 10px;
+    border-radius: 0 0 8px 8px;
+    background: #f0f2f5;
+    text-align: center;
+    border-bottom: 1px solid #8c8c8c;
+}
+/*.pagination div {*/
+/*的;*/
+/*}*/
+
+.article-list-render  {
+    display: flex;
+    margin: 0 0 0 10px;
+    padding: 20px 10px;
+    border-bottom: 1px solid;
+}
+.article-list-render div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.article-list-render .btn-primary {
+    margin-left: 4px;
+    font-size: 10px;
+}
+
+/*修改分页的文字*/
+.pagin ul {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
+
+.article-list-render img {
+    width: 100%;
+    height: 60px;
+}
+
+
+/*、、、、、、、、、日期选择器。*/
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+
+.choice select {
+    height: 35px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.pagin ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
