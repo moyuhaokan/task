@@ -1,0 +1,65 @@
+
+swiper {
+display:block;
+height:400px;
+}
+.page-style {
+  margin-left: 20px;
+  line-height: 40px;
+  font-size: 16px;
+  border-bottom: 1px solid;
+}
+.page-style text {
+  margin-left: 20px;
+}
+.staty {
+  margin-right: 20px;
+  float: right;
+  color: grey;
+}
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid;
+}
+.navbar .item{
+  width: 33.33%;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: red;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: red;
+}
+.flex {
+      display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.flex .flexmin {
+    display: flex;
+    flex-shrink: 0;
+    margin-left:0;
+}
+.flex text {
+  line-height: 22px;
+  margin-right:20px;
+}

@@ -1,0 +1,45 @@
+<!--pages/result/result.wxml-->
+<view class="test-wath">最适合你的职业推荐</view>
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<view hidden="{{currentTab!==0}}">
+     <swiper-item>
+         <view class='page-style'>职业门槛<text >{{threshold}}星</text></view>
+      <view  class='page-style'>难易程度<text>{{difficult}}星</text></view>
+      <view  class='page-style'>成长周期<text>{{cycle}}</text></view>
+      <view class='page-style'>求贤企业<text>{{company}}家</text></view>
+      <view class='page-style flex'><text class='flexmin'>入学基础</text><text>{{basis}}</text></view>
+      <view class='page-style flex'><text class='flexmin'>薪资待遇</text>
+      <text>{{salary[0].time}}年约{{salary[0].salary}}K\n{{salary[1].time}}年约{{salary[1].salary}}K</text>
+      </view>
+      <text class='staty'>{{learning}}在学</text>
+        </swiper-item>
+</view>
+<view hidden="{{currentTab!==1}}">
+     <swiper-item>
+         <view class='page-style'>职业门槛<text >{{threshold1}}星</text></view>
+      <view  class='page-style'>难易程度<text>{{difficult1}}星</text></view>
+      <view  class='page-style'>成长周期<text>{{cycle1}}</text></view>
+      <view class='page-style'>求贤企业<text>{{company1}}家</text></view>
+      <view class='page-style flex'><text class='flexmin'>入学基础</text><text>{{basis1}}</text></view>
+      <view class='page-style flex'><text class='flexmin'>薪资待遇</text>
+      <text>{{salary1[0].time}}约{{salary1[0].salary}}K\n{{salary1[1].time}}约{{salary1[1].salary}}K</text>
+      </view>
+      <text class='staty'>{{learning1}}在学</text>
+        </swiper-item>
+</view>
+<view hidden="{{currentTab!==2}}">
+       <swiper-item>
+         <view class='page-style'>职业门槛<text >{{threshold2}}星</text></view>
+      <view  class='page-style'>难易程度<text>{{difficult2}}星</text></view>
+      <view  class='page-style'>成长周期<text>{{cycle2}}</text></view>
+      <view class='page-style'>求贤企业<text>{{company2}}家</text></view>
+      <view class='page-style flex'><text class='flexmin'>入学基础</text><text>{{basis2}}</text></view>
+         <view class='page-style flex'><text class='flexmin'>薪资待遇</text>
+      <text>{{salary2[0].time}}约{{salary2[0].salary}}K\n{{salary2[1].time}}约{{salary2[1].salary}}K</text>
+      </view>
+      <text class='staty'>{{learning2}}学</text>
+        </swiper-item>
+</view>
