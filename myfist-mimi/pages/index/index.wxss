@@ -1,0 +1,16 @@
+
+.section {
+  display: block;
+  margin-left: 40rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid;
+}
+.btn-set {
+  display: block;
+  margin: 30rpx;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color:  #FF6100;
+}

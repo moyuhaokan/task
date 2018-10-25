@@ -1,0 +1,68 @@
+<view>
+<h1 class="test-wath">试试什么职业最适合你？</h1>
+</view>
+
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}"range-key="name">
+    <view class="picker">
+      学　　历：{{array[index].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" range-key="name">
+    <view class="picker">
+      性　　别：{{array1[index1].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}"range-key="name">
+    <view class="picker">
+      年　　龄：{{array2[index2].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}"range-key="name">
+    <view class="picker">
+      基　　础：{{array3[index3].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange4" value="{{index4}}" range="{{array4}}"range-key="name">
+    <view class="picker">
+      专　　业：{{array4[index4].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange5" value="{{index5}}" range="{{array5}}"range-key="name">
+    <view class="picker">
+     逻　　辑：{{array5[index5].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange6" value="{{index6}}" range="{{array6}}"range-key="name">
+    <view class="picker">
+     性　　格：{{array6[index6].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange7" value="{{index7}}" range="{{array7}}" range-key="name">
+    <view class="picker">
+     偏　　好：{{array7[index7].name}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindPickerChange8" value="{{index8}}" range="{{array8}}"range-key="name">
+    <view class="picker">
+     社　　交：{{array8[index8].name}}
+    </view>
+  </picker>
+</view>
+<button  class='btn-set' bindtap='go'>选好了，点击查看</button>
