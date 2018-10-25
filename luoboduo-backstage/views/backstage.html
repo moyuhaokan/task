@@ -1,0 +1,52 @@
+
+<div class="header">
+    <div class="container">
+        <div class="header-name">萝卜多后台管理系统</div>
+        <ul>
+            <li>管理员</li>
+            <li>admin</li>
+            <li ng-click="logout()"><img src="../luoboduo-backstage/img/logout.svg"></li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid main">
+    <div class="sidebar col-lg-3 col-md-3 col-xs-3 main-sidebar">
+        <div class="main-sidebar-fried">
+            <uib-accordion close-others="oneAtATime">
+                <div uib-accordion-group class="panel-default" is-open="status.isCustomHeaderOpen">
+                <uib-accordion-heading>
+                    文章管理
+                    <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isCustomHeaderOpen, 'glyphicon-chevron-right': !status.isCustomHeaderOpen}"></i>
+                </uib-accordion-heading>
+
+                <a ui-sref="backstage.article"> <div id="list-con">真的文章列表1</div></a>
+                    <a><div id="list-con1">假的文章列表2</div></a>
+                    <a><div id="list-con2"> 假的文章列表3</div></a>
+                    <a><div id="list-con3">假的文章列表4</div></a>
+                </div>
+                <div uib-accordion-group class="panel-default" is-open="status.open">
+                    <uib-accordion-heading>
+                        管理情绪
+                        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                    </uib-accordion-heading>
+                    <div id="list-con4">还行 </div>
+                </div>
+                <div uib-accordion-group class="panel-default" is-open="status.openss">
+                    <uib-accordion-heading>
+                        权限管理
+                        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.openss, 'glyphicon-chevron-right': !status.openss}"></i>
+                    </uib-accordion-heading>
+                     <div id="list-con5"> 权限1 </div>
+                </div>
+                <div uib-accordion-group class="panel-default" is-open="status.opens">
+                    <uib-accordion-heading>
+                        人才管理
+                        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.opens, 'glyphicon-chevron-right': !status.opens}"></i>
+                    </uib-accordion-heading>
+                    <a><div ng-repeat="x in records">{{x}}</div></a>
+                </div>
+            </uib-accordion>
+        </div>
+    </div>
+    <div  class="col-lg-3 col-md-9  col-xs-9  main-view" ui-view></div>
+</div>

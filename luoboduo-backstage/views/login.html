@@ -1,0 +1,50 @@
+<div class="login-bg">
+    <div class="login-container">
+        <div class="panel panel-default login-panel">
+            <form class="loginForm" name="loginForm">
+                <p >后台登录</p>
+                <div class="user form-control">
+                    <img src="img/name.png">
+                    <input type="text"
+                           placeholder="用户名"
+                           ng-model="username"
+                           name="userName"
+                           ng-minlength="3"
+                           ng-maxlength="10"
+                           required>
+                </div>
+                <div class="error" ng-if="!loginForm.userName.$touched"></div>
+                <div class="error" ng-messages="loginForm.userName.$error" ng-if="loginForm.userName.$touched">
+                    <span ng-message="minlength">用户名太短</span>
+                    <span ng-message="maxlength">用户名太长</span>
+                    <span ng-message="required">用户名必填</span>
+                </div>
+                <div class="user form-control">
+                    <img src="img/password.png">
+                    <input type="password"
+                           placeholder="密码"
+                           ng-model="password"
+                           name="userPwd"
+                           ng-minlength="5"
+                           ng-maxlength="16"
+                           required>
+                </div>
+                <div class="error" ng-if="!loginForm.userPwd.$touched"></div>
+                <div class="error" ng-messages="loginForm.userPwd.$error" ng-if="loginForm.userPwd.$touched">
+                    <span ng-message="minlength">密码太短</span>
+                    <span ng-message="maxlength">密码太长</span>
+                    <span ng-message="required">密码必填</span>
+                </div>
+                <div class="checkbox">
+                    <p class="text-danger">{{message}}</p>
+                </div>
+                <button type="submit"
+                        id="login"
+                        class="btn btn-lg btn-info btn-block"
+                        ng-disabled="loginForm.$invalid"
+                        ng-click="login()">登录</button>
+            </form>
+        </div>
+    </div>
+</div>
+

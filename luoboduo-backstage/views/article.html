@@ -1,0 +1,70 @@
+<div class="container-fluid  choice" id="choice">
+<div class="row">
+<div class="col-lg-3 col-md-3  col-xs-6">
+<p class="input-group">
+<input type="text" placeholder="开始时间" current-text="今天"  clear-text="清除"  close-text="关闭" ng-focus="open1()" name="startDate" class="form-control" uib-datepicker-popup     ng-model="article.dt1" is-open="popup1.opened" datepicker-options="{maxDate:article.dt2 || _today}"   ng-required="true" uib-datepicker-popup="{{format}}"  />
+<span class="input-group-btn">
+<button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+</span>
+</p>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-6">
+<p class="input-group">
+<input type="text" placeholder="结束时间" current-text="今天"      clear-text="清除"  close-text="关闭"  ng-focus="open2()"    name="endDate" class="form-control" uib-datepicker-popup   ng-model="article.dt2" is-open="popup2.opened" datepicker-options="{maxDate:_today,minDate:article.dt1}" ng-required="true" uib-datepicker-popup="{{format}}" />
+<span class="input-group-btn">
+<button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+</span>
+</p>
+</div>
+<div class="col-md-3 col-lg-3 col-xs-6 style">
+<span class="introduce" >类型</span><select class="form-control"  ng-model="article.searchType" ng-options="y.value as y.text for y in searchTypes" >
+<option value="" selected hidden>全部</option>
+</select>
+
+</div>
+<div class="col-md-3 col-lg-3  col-xs-6 style">
+<span class="introduce" >状态</span><select class="form-control" ng-model="article.searss" ng-options="y.value as y.text for y in searchStutes">
+<option value="" selected hidden>全部</option>
+</select>
+</div>
+<div class="search">
+<button   ng-click="search()" class="btn btn-primary">搜索</button>
+<button  ng-click="clearSear()"  class="btn btn-danger">清除</button>
+</div>
+</div>
+</div>
+<div class="container-fluid main-article"  >
+<div class="article-list">
+<h5>文章列表</h5><a><button ng-click="articleadd()" class="btn btn-success">新增</button></a>
+</div>
+<div class="row article-list-state ">
+<div class="col-lg-1 col-md-1 col-xs-1 ">ID</div>
+<div class="col-lg-1 col-md-1 col-xs-1 zore">名称</div>
+<div class="col-lg-1 col-md-1 col-xs-1">类型</div>
+<div class="col-lg-2 col-md-2 col-xs-2 zore">发布时间</div>
+<div class="col-lg-2 col-md-2 col-xs-2 zore">修改时间</div>
+<div class="col-lg-2 col-md-2 col-xs-2">图片</div>
+<div class="col-lg-1 col-md-1 col-xs-1 zore">状态</div>
+<div class="col-lg-2 col-md-2 col-xs-2">操作</div>
+</div>
+<div class="row article-list-render "  ng-repeat="x in records">
+<div class="col-lg-1 col-md-1 col-xs-1 zore">{{$index+1 }}</div>
+<div class="col-lg-1 col-md-1 col-xs-1 zore">{{x.title   }}</div>
+<div class="col-lg-1 col-md-1 col-xs-1">{{x.type | type}}</div>
+<div class="col-lg-2 col-md-2 col-xs-2">{{x.createAt | date : 'yyyy-MM-dd hh:mm:ss '}}</div>
+<div class="col-lg-2 col -md-2 col-xs-2">{{x.updateAt | date : 'yyyy-MM-dd hh:mm:ss '}}</div>
+<div class="col-lg-2 col-md-2 col-xs-2"><img src="{{ x.img}}"></div>
+<div class="col-lg-1 col-md-1 col-xs-1">{{x.status | status}}</div>
+<div class="col-lg-2 col-md-2 col-xs-2">
+<button ng-model="article.status" ng-click="upAndDown(x.status, x.id)" class="btn-primary" >{{x.status | statuss}}</button>
+<button  class="btn-primary"  ng-click="editbtn(x.id)">编辑 </button>
+<button class="btn-primary" ng-click="delete(x.id)">删除</button>
+</div>
+</div>
+</div>
+<div class="container-fluid pagin" >
+<div>
+<ul  uib-pagination total-items="bigTotalItems" ng-change="pageChange()" ng-model="currentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false"></ul>
+
+</div>
+</div>
